@@ -1,0 +1,7 @@
+sphinx
+sphinx-autobuild
+sphinx-togglebutton
+sphinx_design
+ghp-import
+myst-parser
+furo
