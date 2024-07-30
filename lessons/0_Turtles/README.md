@@ -13,8 +13,11 @@ such as:
 
 # PCEP Alignment
 
-pcep-30-01 1.2 – understand python’s logic and structure
-- keywords
-- instructions
-- indentation
-- comments
+* PCEP-30-01 1.1 – Understand Fundamental Terms and Definitions
+    * Interpreting and the Interpreter, Compilation and the Compiler
+    * Lexis, Syntax, and Semantics
+* PCEP-30-01 1.2 – Understand Python’s Logic and Structure
+    * Keywords
+    * Instructions
+    * Indentation
+    * Comments

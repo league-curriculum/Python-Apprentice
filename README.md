@@ -9,7 +9,7 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
 
 
 * 0_Turltles
-* 
+  
     * PCEP-30-01 1.1 – Understand Fundamental Terms and Definitions
         * Interpreting and the Interpreter, Compilation and the Compiler
         * Lexis, Syntax, and Semantics
