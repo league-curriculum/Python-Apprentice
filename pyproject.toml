@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-level-1"
+version = "0.1"
+dependencies = [
+    "",
+]
+
+[tool.setuptools]
+# Specify any additional setuptools configuration here if needed
