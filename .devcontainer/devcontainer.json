@@ -1,0 +1,65 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python 3",
+
+	// This is the default
+	// "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	//"image": "mcr.microsoft.com/devcontainers/python:1-${templateOption:imageVariant}",
+	//"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+
+	"containerEnv": {
+		"SDL_VIDEO_WINDOW_POS": "0,0", // GUI Windows all the way in the upper left. 
+		"SDL_AUDIODRIVER": "dummy" // Disable audio
+    }, 
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"password" : "code4life"
+		}
+	},
+
+
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts":  [6080, 5901],
+
+	"portsAttributes":  {
+		"6080":{
+			"label": "VNC Web Screen"
+		},
+		"5901":{
+			"label":"VNC App"
+		}
+	},
+
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "./.devcontainer/setup.sh",
+
+	"customizations": {
+	    "codespaces": {
+	      "openFiles": []
+	    },
+	    "vscode": {
+	      "extensions": [
+	        "ms-python.python",
+	        "ms-python.debugpy",
+			"ms-python.isort"
+	      ], 
+		  "settings": {
+
+		  }
+	    }
+  	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
