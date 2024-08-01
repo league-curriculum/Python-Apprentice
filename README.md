@@ -19,7 +19,7 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
         * Indentation
         * Comments
 
-* 1_Variables and Data Types
+* 1_Types_and_Logic
 
     * PCEP-30-01 1.3 – Use and Understand Different Types of Literals and Numeral Systems
         * Boolean, Integers, Floating-Point Numbers
@@ -46,9 +46,6 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
         * Quotes and Apostrophes Inside Strings
         * Escaping Using the `\` Character
         * Basic String Functions and Methods
-
-
-* 2_Logic
 
     * PCEP-30-01 2.1 – Build Complex Expressions and Determine Data Type
         * Unary and Binary Operators
