@@ -28,3 +28,6 @@ for i in range(1, 31): # Change only this line
         print(i, '🍄 mushroom')
     else:
         print(i)
+
+
+# hint: run the program once and look at the numbers that are printed.
