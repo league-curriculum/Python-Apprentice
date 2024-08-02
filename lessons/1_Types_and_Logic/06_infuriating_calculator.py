@@ -1,7 +1,10 @@
 """
-Fancy Calculator
+Infuriating Calculator
+
+Let's write a calculator that's really hard to use
 
 Ask the user for three things: 
+
 1. A number
 2. A second number
 3. A math operation (add, subtract, multiply, divide)
@@ -9,11 +12,9 @@ Ask the user for three things:
 
 If the user enters an unknown operation, display an error message. ( use messagebox.showerror() 
 
-
 For the number, you can ask for a float or an integer with 
 simpledialog.askfloat() or simpledialog.askinteger(), and for the math 
 operation you can ask for a string with simpledialog.askstring().
-
 
 """
 

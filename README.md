@@ -56,7 +56,6 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
         * Relational Operators ( `==` `!=` `>` `>=` `<` `<=` )
         * The Accuracy of Floating-Point Numbers
 
-
     * PCEP-30-01 3.1 – Make Decisions and Branch the Flow with the `if` Instruction
         * Conditional Statements: `if`, `if-else`, `if-elif`, `if-elif-else`
         * Multiple Conditional Statements
