@@ -20,3 +20,5 @@ for color in colors:                            # loop through the colors
 # 2) Make another square, but put the colors in reverse order, using a negative index. 
 
 ... # Your code here
+
+tina.done()
