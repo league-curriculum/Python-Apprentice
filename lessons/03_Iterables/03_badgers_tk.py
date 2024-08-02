@@ -1,3 +1,14 @@
+"""
+
+* If the number is evenly divisible by 5, print 'fizz'
+* If the number is evenly divisible by 3, print 'buzz'
+* If it is divisible by neither, print the number
+
+
+"""
+
+
+
 import  jtl_lib  # type: ignore
 jtl_lib.add_path()
 from lib.badgers import FizzBuzzer
