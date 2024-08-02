@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="457 546 1141 1307" width="1141" height="1307">
+  <defs/>
+  <g id="leaguebot_bolt" stroke-dasharray="none" fill="none" fill-opacity="1" stroke-opacity="1" stroke="none">
+    <title>leaguebot_bolt</title>
+    <rect fill="white" x="457" y="546" width="1141" height="1307"/>
+    <g id="leaguebot_bolt_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_9">
+        <path d="M 881 566.4 L 1174.3 566.4 C 1194.7346 566.4 1211.3 582.9655 1211.3 603.4 L 1211.3 772.8 C 1211.3 793.23455 1194.7346 809.8 1174.3 809.8 L 881 809.8 C 860.5655 809.8 844 793.23455 844 772.8 L 844 603.4 C 844 582.9655 860.5655 566.4 881 566.4 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_3">
+        <ellipse cx="933.1" cy="661.8" rx="38.500061519223" ry="39.0000623181739" fill="#f86f01"/>
+      </g>
+      <g id="Graphic_11">
+        <path d="M 770.65 892 L 1284.65 892 C 1305.0846 892 1321.65 908.5655 1321.65 929 L 1321.65 1442 C 1321.65 1462.4345 1305.0846 1479 1284.65 1479 L 770.65 1479 C 750.2155 1479 733.65 1462.4345 733.65 1442 L 733.65 929 C 733.65 908.5655 750.2155 892 770.65 892 Z" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_12">
+        <rect x="791.75" y="607.25" width="52" height="98.59999" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_13">
+        <rect x="1211.55" y="607.25" width="52" height="98.59999" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_14">
+        <rect x="958.65" y="809.8" width="138" height="82.19999" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_15">
+        <rect x="844" y="1479.25" width="95.30003" height="325" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_16">
+        <rect x="1116" y="1479.25" width="95.30003" height="325" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_17">
+        <rect x="1075" y="1804.5" width="177" height="28.5" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Graphic_18">
+        <rect x="803.15" y="1804.5" width="177" height="28.5" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+      </g>
+      <g id="Group_29">
+        <g id="Line_19">
+          <path d="M 1493.3333 1365.3333 L 1490.6667 1109.3333 L 1321.65 944" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+        </g>
+        <g id="Group_28">
+          <g id="Graphic_23">
+            <path d="M 1428 1509.3333 C 1428 1429.8043 1457.1015 1365.3333 1493 1365.3333 C 1528.8985 1365.3333 1558 1429.8043 1558 1509.3333 L 1428 1509.3333" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+          </g>
+          <g id="Graphic_25">
+            <rect x="1395.3167" y="1472.3333" width="202.6833" height="78" fill="white"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_30">
+        <g id="Line_34">
+          <path d="M 561.9667 1355.3333 L 564.6334 1099.3333 L 733.65 934" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+        </g>
+        <g id="Group_31">
+          <g id="Graphic_33">
+            <path d="M 627.30004 1499.3333 C 627.30004 1419.8043 598.1985 1355.3333 562.30004 1355.3333 C 526.4016 1355.3333 497.30004 1419.8043 497.30004 1499.3333 L 627.30004 1499.3333" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+          </g>
+          <g id="Graphic_32">
+            <rect x="457.30004" y="1462.3333" width="202.6833" height="78" fill="white"/>
+          </g>
+        </g>
+      </g>
+      <g id="Graphic_36">
+        <rect x="807.4" y="952" width="440.5" height="440.5" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image4.tiff" width="270" height="270" transform="translate(807.4 952) scale(1.6314815)"/>
+        </g>
+      </g>
+      <g id="Graphic_37">
+        <ellipse cx="1117" cy="661.8" rx="38.500061519223" ry="39.0000623181739" fill="#f86f01"/>
+      </g>
+    </g>
+  </g>
+</svg>
