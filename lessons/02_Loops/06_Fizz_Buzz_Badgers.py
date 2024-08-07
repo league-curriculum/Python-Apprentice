@@ -9,7 +9,7 @@ For the numbers from 1 to 30:
 * If the number is evenly divisible by 15, print '🐍 snake!'
 * If it is divisible by neither, print the number.
 
-Your job is to modify online online line -- the one with range() 
+Your job is to modify only one line -- the one with range() 
 -- so that the program only prints '🦡 badger'
 
 Your program should print 4 badgers. 

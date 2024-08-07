@@ -8,7 +8,6 @@
 """
 
 
-
 import  jtl_lib  # type: ignore
 jtl_lib.add_path()
 from lib.badgers import FizzBuzzer
