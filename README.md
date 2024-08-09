@@ -8,7 +8,7 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
 # PCEP Alignment
 
 
-* 0_Turltles
+* 0_Turtles
   
     * PCEP-30-01 1.1 – Understand Fundamental Terms and Definitions
         * Interpreting and the Interpreter, Compilation and the Compiler
@@ -61,7 +61,7 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
         * Multiple Conditional Statements
         * Nesting Conditional Statements
   
-* 3_Iterables
+* 3_Loops 
   
     * PCEP-30-01 3.2 – Perform Different Types of Loops
         * The `pass` Instruction
@@ -85,20 +85,19 @@ https://pythoninstitute.org/assets/627e61dd59d78374329371.pdf
         * Copying and Cloning
         * Lists in Lists: Matrices and Cubes
 
+
+* 4_Data_Structures_Functions
+
     * PCEP-30-01 4.2 – Collect and Process Data Using Tuples
         * Tuples: Indexing, Slicing, Building, Immutability
         * Tuples vs. Lists: Similarities and Differences
         * Lists Inside Tuples and Tuples Inside Lists
-
-* 4_Data_Structures
   
     * PCEP-30-02 4.3 – Collect and Process Data Using Dictionaries
         * Dictionaries: Building, Indexing, Adding and Removing Keys
         * Iterating Through Dictionaries and Their Keys and Values
         * Checking the Existence of Keys
         * Methods: `keys()`, `items()`, and `values()`
-
-* 5_Functions
 
     * PCEP-30-01 5.1 – Decompose the Code Using Functions
         * Defining and Invoking User-Defined Functions and Generators
