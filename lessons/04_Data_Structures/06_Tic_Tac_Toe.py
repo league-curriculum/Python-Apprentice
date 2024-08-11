@@ -37,7 +37,6 @@ def check_win(board):
         The winner's token ( x or o ) if there is one, otherwise None
     """
 
-
     def transpose(a):
         return list(zip(*a))
 
@@ -53,7 +52,6 @@ def check_win(board):
             return winner
 
     return None
-
 
 class TicTacToe:
     """A Simple Tic Tac Toe game"""
@@ -124,8 +122,6 @@ class TicTacToe:
         elif self.turn_n == 9:
             self.message.value = "It's a draw!"
             info("Tic-tac-toe","It's a draw!")
-
-
 
 ttt = TicTacToe(check_win)
 ttt.start()
