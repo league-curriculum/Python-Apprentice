@@ -82,12 +82,21 @@ class TicTacToe:
         self.reset()
 
     def reset(self):
+        """Reset the game state"""
         self.turn_n = 0
         self.turn = X_MARK
         self.message.value = "It's your turn, " + self.current_turn
-        self.clear_board()
+        
+        self.board   = [[None for _ in range(3)] for _ in range(3)]
+        self.buttons = [[None for _ in range(3)] for _ in range(3)]
+
+        # generate a 3x3 grid
+        for x in range(3):
+            for y in range(3):
+                self.buttons[x][y] = PushButton(self.board_pane, text='', grid=[x, y], width=3, command=self.do_turn, args=[x,y])
 
     def start(self):
+        """Start the game"""
         self.app.display()
 
     @property
@@ -116,15 +125,6 @@ class TicTacToe:
             self.message.value = "It's a draw!"
             info("Tic-tac-toe","It's a draw!")
 
-
-    def clear_board(self):
-        self.board   = [[None for _ in range(3)] for _ in range(3)]
-        self.buttons = [[None for _ in range(3)] for _ in range(3)]
-
-        # generate a 3x3 grid
-        for x in range(3):
-            for y in range(3):
-                self.buttons[x][y] = PushButton(self.board_pane, text='', grid=[x, y], width=3, command=self.do_turn, args=[x,y])
 
 
 ttt = TicTacToe(check_win)
