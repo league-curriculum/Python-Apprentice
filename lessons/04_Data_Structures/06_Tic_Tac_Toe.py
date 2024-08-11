@@ -4,8 +4,8 @@ from guizero import App, Box, PushButton, Text, info
 X_MARK = "X"
 O_MARK = "O"
 
+# Implement check_row() and check_win() to allo the game to check if a player has won
 # IMPORTANT! In your code, you should use the constants X_MARK and O_MARK instead of the strings "x" and "o"
-
 
 def check_row(l):
     """Check if a player won on a row
@@ -16,17 +16,7 @@ def check_row(l):
         The winner's token ( x or o ) if there is one, otherwise None
         """
 
-
-    if all([e == X_MARK for e in l]):
-        return X_MARK
-    if all([e == O_MARK for e in l]):
-        return O_MARK
-    
     return None
-
-
-# Now, write a function that takes a 2D array and checks if there is a winner.
-# This function should call the check_winner function for each row, column, and diagonal.
 
 def check_win(board):
     """Check if a player has won on a board
@@ -37,21 +27,11 @@ def check_win(board):
         The winner's token ( x or o ) if there is one, otherwise None
     """
 
-    def transpose(a):
-        return list(zip(*a))
-
-    m = board[:] # Copy the whole list 
-    m.extend(transpose(m)) # Add all of the items from transpose to m, a bit like m += transpose(l)
-
-    m.append([board[i][i] for i in range(3)])
-    m.append([board[i][2-i] for i in range(3)])
-
-    for l in m:
-        winner = check_row(l)
-        if winner:
-            return winner
-
     return None
+
+# The following code is the main part of the program. It creates a GUI for the
+# game and handles the game logic. Implement the functions above first, then
+# after your program is working you can try chaning the code below. 
 
 class TicTacToe:
     """A Simple Tic Tac Toe game"""
