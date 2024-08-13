@@ -1,4 +1,4 @@
-# Getting Strarted with Codespaces
+# Getting Started with Codespaces
 
 
 ## Create a Codespace

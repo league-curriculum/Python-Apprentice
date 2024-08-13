@@ -39,7 +39,13 @@ Go to the repository page, such as the repo for [Python Level 1](https://github.
 
  Open Visual Studio Code and on the Welcome page, look for the "Start" section: 
 
-<img class="c400" src=" https://images.jointheleague.org/vscode/vscode_start.png" >
+<img class="c300" src=" https://images.jointheleague.org/vscode/vscode_start.png" >
+
+Click on "Clone Git Repository". You can either enter the URL of the Github repo that you want to open, ( look at the top of the window for a text box entry ) or click on "Clone From Github" to log into Github and get a list of recent repos. The one you just cloned should be on top. 
+
+After you open our repo, [continue with this tutorial](https://code.visualstudio.com/docs/python/python-tutorial) for more about how to use VSCode with Python. 
+
+
 
 
 

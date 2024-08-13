@@ -14,12 +14,11 @@ To get started with this course, you will:
 2. Make a copy of the source code repository for the lesson
 3. Setup up your IDE ( Integrated Development Environment, your programming editor. ) 
 
-
 ## Get a Github Account
 
 Github is a professional source code repository, and almost everything you do at the League will involve Github. 
 
-[Create an Account at Github](https://github.com/signup)
+<a href="https://github.com/signup" target="_blank">Create an Account at Github</a>
 
 If you already have an account, sign into it now. 
 
@@ -31,7 +30,6 @@ There are two different ways to do these steps:
 * The more flexible way is to install an [IDE on your local computer](./gs_ide.md).
 
 We recommend most students start with [Getting Started with Codespaces](./gs_codespaces.md). 
-
 
 ### Selecting Codespaces 
 

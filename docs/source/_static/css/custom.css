@@ -4,23 +4,25 @@ img.inline {
     height: 25px;
 }
 
-img.centered {
+
+
+img.c300 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px; /* Adjust the width as needed */
+    width: 300px; 
 }
 
 img.c400 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px; /* Adjust the width as needed */
+    width: 400px;
 }
 
 img.c600 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 600px; /* Adjust the width as needed */
+    width: 600px; 
 }
