@@ -1,0 +1,28 @@
+
+img.inline {
+    vertical-align: middle;
+    height: 25px;
+}
+
+
+
+img.c300 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; 
+}
+
+img.c400 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+img.c600 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px; 
+}
