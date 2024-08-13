@@ -1,0 +1,26 @@
+
+img.inline {
+    vertical-align: middle;
+    height: 25px;
+}
+
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; /* Adjust the width as needed */
+}
+
+img.c400 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; /* Adjust the width as needed */
+}
+
+img.c600 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px; /* Adjust the width as needed */
+}
