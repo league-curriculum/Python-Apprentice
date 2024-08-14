@@ -17,7 +17,6 @@ Except, if the user is the same age as you, print "You are pretty awesome!"
 
 from tkinter import messagebox, simpledialog, Tk # import required modules
 
-
 window = Tk()     # Create a window object
 window.withdraw() # Hide the window
 
