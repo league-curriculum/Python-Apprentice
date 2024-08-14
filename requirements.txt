@@ -4,5 +4,5 @@ guizero
 pillow
 IPython
 ipykernel
-jupyterlab
+#jupyterlab
 git+https://github.com/league-curriculum/jlt_lib.git
