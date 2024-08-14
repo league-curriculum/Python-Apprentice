@@ -1,6 +1,6 @@
 pygame
 pgzero
-zerogui
+guizero
 pillow
 IPython
 ipykernel
