@@ -34,8 +34,7 @@
 
 	"portsAttributes":  {
 		"6080":{
-			"label": "VNC Web Screen",
-			"onAutoForward": "openPreview"
+			"label": "VNC Web Screen"
 		},
 		"5901":{
 			"label":"VNC App"
@@ -56,7 +55,8 @@
 	      "extensions": [
 	        "ms-python.python",
 	        "ms-python.debugpy",
-			"ms-python.isort"
+			"ms-python.isort",
+			"ms-toolsai.jupyter"
 	      ], 
 		  "settings": {
 
