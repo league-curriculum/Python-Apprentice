@@ -33,5 +33,5 @@ be prepared to certify your skills with the `Python Institute's PCAP certificati
    getting_started
    about
    course_outline
-   Github repo <https://github.com/league-curriculum/Python-Level-1.git>
+   Github repo <https://github.com/league-curriculum/Python-Apprentice.git>
 
