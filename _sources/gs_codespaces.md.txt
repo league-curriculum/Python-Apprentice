@@ -1,6 +1,5 @@
 # Getting Started with Codespaces
 
-
 ## Create a Codespace
 
 A Codespace is basically Visual Studio Code running on the web. If you use VS Code
@@ -27,7 +26,6 @@ it will read that it is "Setting up your codespace". This may take a few
 minutes. When it is done, you will have a Visual Studio Code window, which will look like this: 
 
 <center><img src="https://images.jointheleague.org/module-navigation/vscode.png" width="600px"></center>
-
 
 ## Open a Virtual Screen on the Web
 
