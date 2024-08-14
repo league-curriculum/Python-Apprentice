@@ -10,7 +10,9 @@ on your local machine, Codespaces will be very familiar.
 
 You can create codespace for the Python Level 1 repository by pressing the button below. 
 
-<span style="background-color: orange; padding: 10px 24px; margin-bottom: 10px; margin-right: 7px;"><a href="https://codespaces.new/league-curriculum/Python-Level-1" target="_blank" style="color: white; font-size: 12pt; align-items: center; row-gap: 7px; column-gap: 7px;"><img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Open in Codespaces" style="width: 20px; vertical-align: middle;">Open in Codespaces
+<span style="background-color: orange; padding: 10px 24px; margin-bottom: 10px; margin-right: 7px;">
+<a href="https://codespaces.new/league-curriculum/Python-Level-1" target="_blank" style="color: white; font-size: 12pt; align-items: center; row-gap: 7px; column-gap: 7px;">
+<img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Open in Codespaces" style="width: 20px; vertical-align: middle;">Open in Codespaces
 </a></span>
 
 ### Manual Process
