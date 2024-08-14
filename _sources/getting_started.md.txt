@@ -21,6 +21,7 @@ Github is a professional source code repository, and almost everything you do at
 
 If you already have an account, sign into it now. 
 
+
 ## 2: Get the Source Code
 
 Click this button to create a codespace from the source code repository. This
@@ -29,7 +30,7 @@ Github Codespaces -- and after you check in your code with git, it will create a
 copy of the whole repo in your Github account. 
 
 <div class="centered">
-<span class="button orange"><a href="https://codespaces.new/league-curriculum/Python-Level-1" target="_blank" >
+<span class="button orange"><a href="https://codespaces.new/league-curriculum/Python-Apprentice" target="_blank" >
 <img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Open in Codespaces">
 Open in Codespaces</a></span>
 </div>
