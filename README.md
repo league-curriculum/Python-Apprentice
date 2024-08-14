@@ -1,4 +1,4 @@
-# Python Level 1 Curriculum
+# Python Apprentice Curriculum
 
 The League's Python Apprentice curriculum introduces students to the core feature
 of Python using professional tools like Github and Visual Studio Code. The
