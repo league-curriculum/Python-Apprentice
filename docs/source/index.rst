@@ -22,4 +22,5 @@ easy to read and write.
    getting_started
    about
    course_outline
+   Github repo <https://github.com/league-curriculum/Python-Level-1.git>
 

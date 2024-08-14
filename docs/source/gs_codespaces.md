@@ -1,6 +1,5 @@
 # Getting Started with Codespaces
 
-
 ## Create a Codespace
 
 A Codespace is basically Visual Studio Code running on the web. If you use VS Code
@@ -10,7 +9,9 @@ on your local machine, Codespaces will be very familiar.
 
 You can create codespace for the Python Level 1 repository by pressing the button below. 
 
-<span style="background-color: orange; padding: 10px 24px; margin-bottom: 10px; margin-right: 7px;"><a href="https://codespaces.new/league-curriculum/Python-Level-1" target="_blank" style="color: white; font-size: 12pt; align-items: center; row-gap: 7px; column-gap: 7px;"><img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Open in Codespaces" style="width: 20px; vertical-align: middle;">Open in Codespaces
+<span style="background-color: orange; padding: 10px 24px; margin-bottom: 10px; margin-right: 7px;">
+<a href="https://codespaces.new/league-curriculum/Python-Level-1" target="_blank" style="color: white; font-size: 12pt; align-items: center; row-gap: 7px; column-gap: 7px;">
+<img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Open in Codespaces" style="width: 20px; vertical-align: middle;">Open in Codespaces
 </a></span>
 
 ### Manual Process
@@ -25,7 +26,6 @@ it will read that it is "Setting up your codespace". This may take a few
 minutes. When it is done, you will have a Visual Studio Code window, which will look like this: 
 
 <center><img src="https://images.jointheleague.org/module-navigation/vscode.png" width="600px"></center>
-
 
 ## Open a Virtual Screen on the Web
 
