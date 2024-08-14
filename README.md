@@ -9,9 +9,7 @@ will be familiar with all of material on the test.
 
 ## Getting Started
 
-Read the course documentation to get started on the lessons
-
-https://league-curriculum.github.io/Python-Apprentice/getting_started.html
+Read the [course documentation to get started on the lessons](https://league-curriculum.github.io/Python-Apprentice/getting_started.html)
 
 All coursework is in the `lessons/` directory. Start with `lessons/00_Turtles/01_Get_Started.ipynb`
 
