@@ -6,7 +6,6 @@ course is aligned with the [PCEP™ – Certified Entry-Level Python Programmer]
 exam from the Python Institue, so students who have completed this course
 will be familiar with all of material on the test. 
 
-
 ## Getting Started
 
 Read the [course documentation to get started on the lessons](https://league-curriculum.github.io/Python-Apprentice/getting_started.html)
