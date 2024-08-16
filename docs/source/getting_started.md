@@ -59,6 +59,7 @@ minutes. When it is done, you will have a Visual Studio Code window, which will 
 something like this: 
 
 <img class = "c400" src="https://images.jointheleague.org/module-navigation/vscode.png">
+
 You are ready to start your lessons. 
 
 ## Tip
