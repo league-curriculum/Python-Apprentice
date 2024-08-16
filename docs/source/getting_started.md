@@ -11,7 +11,9 @@ gs_ide
 To get started with this course, you will:
 
 1. Create an account on [Github](https://github.com)
-2. Make a copy of the source code repository for the lesson
+2. Tell us your Github name so we can track your progress
+3. Make a copy of the source code repository for the lesson
+4. Start the web-based programming editor to begin the lesson. 
 
 ## 1: Get a Github Account
 
@@ -21,35 +23,47 @@ Github is a professional source code repository, and almost everything you do at
 
 If you already have an account, sign into it now. 
 
-## 2: Tell us your Github name
+## 2: Tell Us Your Github Name
 
-Let us know your Github name so we can track your progress. 
+Let us know your Github name so we can track your progress by filling out and submitting this form:
 
 <iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## 3: Get the Source Code
 
-Click this button to "fork" the source code, then click on the 
-<img class="inline" src="https://images.jointheleague.org/github/create_fork.png"> button. 
-This will copy the whole course into your Github directory. 
+Click this button to "fork" the source code:
 
 <div class="centered">
 <span class="button green"><a href="https://github.com/league-curriculum/Python-Apprentice/fork" target="_blank" >
 <img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Fork Repository">
 Fork Repository</a></span>
 </div>
+<br/>
+Then, on the next page,   click on the 
+<img class="inline" src="https://images.jointheleague.org/github/create_fork.png"> button. 
+This will copy the whole course into your Github account. 
 
 When the fork is finished, you can start your web based programming editor. 
 
 ## 4: Start the Codespace
 
-After the code is forked, click on the <img class="inline" src="https://images.jointheleague.org/github/actions_menu.png">
-menu item, then click on the big green button that says "I understand" and "enable workflows". This will allow
-your repo to tell the League when you check in code, so we can track your progress. Now click on the
-<img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> menu item to go back to the main page. 
+### Enable progress reporting
+ After the code is forked, you wil see the web page for the course repository,
+named 'Python-Apprentice', in your Github account. Click on the <img class="inline" src="https://images.jointheleague.org/github/actions_menu.png">
+menu item, then click on this big green button:
 
-Next look for the  <img class="inline" src="https://images.jointheleague.org/github/code_button.png"> button. Click on the button, and after the window pops up, 
-click on the "Codespaces" tab. It will look like this: 
+<img class="c400" src="https://images.jointheleague.org/github/understand_workflows.png" >
+
+This will allow your repo to tell the League when you check in code, so we can
+track your progress. 
+
+Now click on the <img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> 
+menu item to go back to the main page. 
+
+### Create a new Codespace
+
+Next, on the main repository page,  look for the  <img class="inline" src="https://images.jointheleague.org/github/code_button.png"> 
+button. Click on the button, and after the window pops up,  click on the "Codespaces" tab. It will look like this: 
 
 <img class="c400" src="https://images.jointheleague.org/module-navigation/create_codespace.png" >
 
@@ -60,7 +74,8 @@ something like this:
 
 <img class = "c400" src="https://images.jointheleague.org/module-navigation/vscode.png">
 
-You are ready to start your lessons. 
+You are ready to start your lessons. You editor window should be displaying the README file, and
+at the bottom of that file it will tell you which lesson to start with. 
 
 ## Tip
 
