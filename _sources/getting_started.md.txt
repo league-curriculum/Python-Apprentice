@@ -36,7 +36,7 @@ Click this button to "fork" the source code:
 <img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Fork Repository">
 Fork Repository</a></span>
 </div>
-
+<br/>
 Then, on the next page,   click on the 
 <img class="inline" src="https://images.jointheleague.org/github/create_fork.png"> button. 
 This will copy the whole course into your Github account. 
