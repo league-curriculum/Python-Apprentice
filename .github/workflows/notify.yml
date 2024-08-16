@@ -1,6 +1,6 @@
 name: Notify Telemetry
 
-on: [push]
+on: [push, fork]
 
 jobs:
   notify_telemetry:
@@ -9,10 +9,10 @@ jobs:
     #- name: Checkout Code
     #  uses: actions/checkout@v3
 
-    - name: Send POST request
+    - name: Tell The League that the student has pushed code
       env:
         GITHUB_USERNAME: ${{ github.actor }}
-        REPO_URL: ${{ github.repository }}
+        REPO_URL: ${{ github.repositoryUrl }}
         EVENT_TYPE: ${{ github.event_name }}
       run: |
         curl -X POST https://student-telem.do.jointheleague.org/github/activity \
