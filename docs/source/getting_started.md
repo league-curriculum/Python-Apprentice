@@ -24,7 +24,9 @@ If you already have an account, sign into it now.
 
 ## 2: Tell us your Github name
 
-<iframe src="/forms/github.html" width="640" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+Let us know your Github name so we can track your progress. 
+
+<iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 ## 3: Get the Source Code

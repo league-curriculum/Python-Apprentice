@@ -33,6 +33,7 @@ source_suffix = ['.rst', '.md']
 templates_path = ['_templates']
 exclude_patterns = []
 
+html_last_updated_fmt = '%b %d, %Y %H:%M'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
