@@ -6,8 +6,8 @@ jobs:
   notify_telemetry:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v3
+    #- name: Checkout Code
+    #  uses: actions/checkout@v3
 
     - name: Send POST request
       env:
@@ -15,6 +15,6 @@ jobs:
         REPO_URL: ${{ github.repository }}
         EVENT_TYPE: ${{ github.event_name }}
       run: |
-        curl -X POST https://student-telem.do.jointheleague.org/acct/register \
+        curl -X POST https://student-telem.do.jointheleague.org/github/activity \
         -H "Content-Type: application/json" \
         -d '{"username": "'"${GITHUB_USERNAME}"'", "repo_url": "'"${REPO_URL}"'", "event_type": "'"${EVENT_TYPE}"'"}'
