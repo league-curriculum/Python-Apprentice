@@ -29,15 +29,17 @@ Let us know your Github name so we can track your progress.
 
 ## 3: Get the Source Code
 
-Click this button to "fork" the source code, then click on the 
-<img class="inline" src="https://images.jointheleague.org/github/create_fork.png"> button. 
-This will copy the whole course into your Github account. 
+Click this button to "fork" the source code:
 
 <div class="centered">
 <span class="button green"><a href="https://github.com/league-curriculum/Python-Apprentice/fork" target="_blank" >
 <img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Fork Repository">
 Fork Repository</a></span>
 </div>
+
+Then, on the next page,   click on the 
+<img class="inline" src="https://images.jointheleague.org/github/create_fork.png"> button. 
+This will copy the whole course into your Github account. 
 
 When the fork is finished, you can start your web based programming editor. 
 
