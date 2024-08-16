@@ -6,6 +6,7 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
+CNAME		 = python-apprentice.jointheleague.org
 
 # Infer the repository URL from the git remote
 REPO_URL := $(shell git config --get remote.origin.url)
@@ -25,7 +26,7 @@ help:
 publish:
 	@make html
 	@echo "Publishing to $(REPO_URL)"
-	@ghp-import -n -p -f ./build/html
+	@ghp-import -n -p --cname $(CNAME) -f ./build/html 
 
 livehtml:
 	sphinx-autobuild --open-browser "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) 

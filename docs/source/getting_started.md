@@ -24,7 +24,7 @@ If you already have an account, sign into it now.
 
 ## 2: Tell us your Github name
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMh476Vw_-zAyG-6lE1M1nu3z754dSe9opAMG5WPnDlelh2g/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="/forms/github.html" width="640" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
 ## 3: Get the Source Code

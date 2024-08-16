@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            flex-basis: 45%;
+        }
+
+        .form-group input {
+            flex-basis: 50%;
+            padding: 5px;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .hidden-field {
+            display: none;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://student-telem.do.jointheleague.org/acct/register" method="post">
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="instructor_name">Instructor Name:</label>
+            <input type="text" id="instructor_name" name="instructor_name" >
+        </div>
+        <div class="form-group">
+            <label for="student_email">Your Email:</label>
+            <input type="email" id="student_email" name="student_email">
+            <label for="parent_email">Parent Email:</label>
+            <input type="email" id="parent_email" name="parent_email">
+        </div>
+        <div class="form-group">
+            <label for="github_account">GitHub Account:</label>
+            <input type="text" id="github_account" name="github_account" required>
+        </div>
+        <input type="hidden" id="redirect_url" name="redirect_url" value="https://python-apprentice.jointheleague.org/forms/thank_you.html">
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

@@ -68,3 +68,47 @@ img.c600 {
     margin-right: auto;
     width: 600px; 
 }
+
+/* Forms  */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex-basis: 45%;
+}
+
+.form-group input {
+    flex-basis: 50%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.hidden-field {
+    display: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
