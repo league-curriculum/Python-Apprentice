@@ -9,8 +9,15 @@ will be familiar with all of material on the test.
 
 ## Getting Started
 
-Read the [course documentation to get started on the lessons](https://league-curriculum.github.io/Python-Apprentice/getting_started.html)
+First, read the Getting Started guide at
 
-All coursework is in the `lessons/` directory. Start with `lessons/00_Turtles/01_Get_Started.ipynb`
+    https://python-apprentice.jointheleague.org/getting_started.html
+
+Next, after you've started the Codespaces editor, click on the file browser in the left of the 
+window to open the first lesson, which is in the directory:
+
+    lessons/lessons/00_Turtles/01_Get_Started.ipynb
+
+
 
 
