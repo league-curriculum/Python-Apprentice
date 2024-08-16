@@ -21,7 +21,7 @@ Github is a professional source code repository, and almost everything you do at
 
 If you already have an account, sign into it now. 
 
-## 2: Tell us your Github name
+## 2: Tell Us Your Github Name
 
 Let us know your Github name so we can track your progress. 
 
