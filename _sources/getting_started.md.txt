@@ -25,7 +25,7 @@ If you already have an account, sign into it now.
 
 ## 2: Tell Us Your Github Name
 
-Let us know your Github name so we can track your progress. 
+Let us know your Github name so we can track your progress by filling out and submitting this form:
 
 <iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
