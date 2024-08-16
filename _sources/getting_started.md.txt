@@ -49,9 +49,13 @@ When the fork is finished, you can start your web based programming editor.
 
 After the code is forked, you wil see the web page for the course repository,
 named 'Python-Apprentice', in your Github account. click on the <img class="inline" src="https://images.jointheleague.org/github/actions_menu.png">
-menu item, then click on the big green button that says "I understand" and
-"enable workflows". This will allow your repo to tell the League when you check
-in code, so we can track your progress. Now click on the <img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> menu item to go back to the main page. 
+menu item, then click on this big green button:
+
+<img class="c400" src="https://images.jointheleague.org/github/understand_workflows.png" >
+
+This will allow your repo to tell the League when you check in code, so we can
+track your progress. Now click on the <img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> 
+menu item to go back to the main page. 
 
 Next look for the  <img class="inline" src="https://images.jointheleague.org/github/code_button.png"> 
 button. Click on the button, and after the window pops up,  click on the "Codespaces" tab. It will look like this: 
