@@ -1,5 +1,3 @@
-
-
 Python Apprentice
 =================
 
@@ -18,7 +16,6 @@ When you finish this course, you will have a solid understanding of Python’s
 core concepts, ready to tackle more advanced topics, and you will 
 be prepared to certify your skills with the `Python Institute's PCAP certification. <https://pythoninstitute.org/pcap>`_
 
-
 .. raw:: html
 
    <div class="centered">
@@ -36,3 +33,6 @@ be prepared to certify your skills with the `Python Institute's PCAP certificati
    All Curriculum <https://curriculum.jointheleague.org>
    Github Repo <https://github.com/league-curriculum/Python-Apprentice.git>
 
+--- 
+
+The development of this curriculum was made possible by the generous support of the Itzkowitz Family Foundation.
