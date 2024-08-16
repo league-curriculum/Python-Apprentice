@@ -11,8 +11,9 @@ jobs:
       env:
         GITHUB_USERNAME: ${{ github.actor }}
         REPO_URL: ${{ github.repositoryUrl }}
+        COMMIT: ${{ github.sha }}
         EVENT_TYPE: ${{ github.event_name }}
       run: |
         curl -X POST https://student-telem.do.jointheleague.org/github/activity \
         -H "Content-Type: application/json" \
-        -d '{"username": "'"${GITHUB_USERNAME}"'", "repo_url": "'"${REPO_URL}"'", "event_type": "'"${EVENT_TYPE}"'"}'
+        -d '{"username": "'"${GITHUB_USERNAME}"'", "repo_url": "'"${REPO_URL}"'", "commit": "'"${COMMIT}"'", "event_type": "'"${EVENT_TYPE}"'"}'
