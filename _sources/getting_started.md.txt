@@ -21,26 +21,48 @@ Github is a professional source code repository, and almost everything you do at
 
 If you already have an account, sign into it now. 
 
-
 ## 2: Tell us your Github name
 
 Let us know your Github name so we can track your progress. 
 
 <iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-
 ## 3: Get the Source Code
 
-Click this button to create a codespace from the source code repository. This
-operation will create a web IDE that you can use to complete the lessons --
-Github Codespaces -- and after you check in your code with git, it will create a
-copy of the whole repo in your Github account. 
+Click this button to "fork" the source code, then click on the 
+<img class="inline" src="https://images.jointheleague.org/github/create_fork.png"> button. 
+This will copy the whole course into your Github directory. 
 
 <div class="centered">
-<span class="button orange"><a href="https://codespaces.new/league-curriculum/Python-Apprentice" target="_blank" >
-<img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Open in Codespaces">
-Open in Codespaces</a></span>
+<span class="button green"><a href="https://github.com/league-curriculum/Python-Apprentice/fork" target="_blank" >
+<img src="https://images.jointheleague.org/p3logos/github-mark-white.png" alt="Fork Repository">
+Fork Repository</a></span>
 </div>
+
+When the fork is finished, you can start your web based programming editor. 
+
+## 4: Start the Codespace
+
+After the code is forked, click on the <img class="inline" src="https://images.jointheleague.org/github/actions_menu.png">
+menu item, then click on the big green button that says "I understand" and "enable workflows". This will allow
+your repo to tell the League when you check in code, so we can track your progress. Now click on the
+<img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> menu item to go back to the main page. 
+
+Next look for the  <img class="inline" src="https://images.jointheleague.org/github/code_button.png"> button. Click on the button, and after the window pops up, 
+click on the "Codespaces" tab. It will look like this: 
+
+<img class="c400" src="https://images.jointheleague.org/module-navigation/create_codespace.png" >
+
+Click on the "Create codespace on master"  button. A new tab or window will open, and
+it will read that it is "Setting up your codespace". This may take a few
+minutes. When it is done, you will have a Visual Studio Code window, which will look 
+something like this: 
+
+<img class = "c400" src="https://images.jointheleague.org/module-navigation/vscode.png">
+
+You are ready to start your lessons. 
+
+## Tip
 
 :::{tip}
 If you want to run an IDE on your local machine, rather than the web, see [Getting Started with an IDE](./gs_ide.md).

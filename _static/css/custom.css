@@ -22,6 +22,10 @@ span.button.blue {
     background-color: blue; 
 }
 
+span.button.green {
+    background-color: green; 
+}
+
 span.button a {
     color: white; 
     font-size: 12pt; 
