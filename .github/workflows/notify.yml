@@ -6,8 +6,6 @@ jobs:
   notify_telemetry:
     runs-on: ubuntu-latest
     steps:
-    #- name: Checkout Code
-    #  uses: actions/checkout@v3
 
     - name: Tell The League that the student has pushed code
       env:
