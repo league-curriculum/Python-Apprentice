@@ -34,6 +34,7 @@ tina.forward(20)                        # Move tina forward by 20
 tina.write("Why, hello there!")         # Write the message "Why, hello there!"
 tina.backward(20)                       # Move tina backward by 20
 
+tina.goto(-50,0)
 tina.pendown()
 tina.color('red')                       # Set the color of tina to red
 tina.begin_fill()
