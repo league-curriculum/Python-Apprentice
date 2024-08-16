@@ -1,7 +1,8 @@
-# Flaming Ninja Star
+"""Flaming Ninja Star
 
-# This program already works; run it to see what it does. 
-# THen change it to make it draw a different pattern. 
+This program already works; run it to see what it does. 
+Then change it to make it draw a different pattern. 
+"""
 
 import random
 import turtle

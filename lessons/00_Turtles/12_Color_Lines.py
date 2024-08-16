@@ -1,6 +1,9 @@
-# Color Lines
+"""
+Color Lines
 
-# 1) Finish the program to make Tina draw a square with each side being a different color. 
+1) Finish the program to make Tina draw a square with each side being a different color. 
+
+"""
 
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup (width=600, height=600)    # Set the size of the window

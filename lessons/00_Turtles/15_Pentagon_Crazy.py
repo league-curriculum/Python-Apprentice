@@ -1,6 +1,8 @@
-# Pentagon Crazy
-#
-# This program already works. Run it, then change it to make it draw a different pattern.
+"""
+Pentagon Crazy
+
+This program already works. Run it, then change it to make it draw a different pattern.
+"""
 
 import random
 import turtle
