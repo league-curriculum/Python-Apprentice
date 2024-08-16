@@ -1,5 +1,11 @@
 
-# 1) Improve the code below to draw a square using a loop
+""""
+More Efficient Turtles
+
+Use what you've learned about functions and variables to make a program that
+can draw a square, pentagon, and hexagon with a single function
+"""
+
 
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup (width=600, height=600)    # Set the size of the window
@@ -11,8 +17,8 @@ tina.speed(2)                           # Make the turtle move as fast, but not 
 
 def draw_polygon(sides):
 
-    angle = ... # Your code here
-
+    angle = ... # Calculate angle from number of sides
+    
     for i in range(...):                 # Loop through the number of sides
         ...                              # Move tina forward by the forward distance
         ...                              # Turn tina left by the left turn
@@ -20,11 +26,11 @@ def draw_polygon(sides):
 
 draw_polygon(...)                        # Draw a square
 
-...                                      # Move tina
+...                                      # Move tina to another spot on the screen
 
 draw_polygon(...)                        # Draw a pentagon
 
-...                                      # Move tina
+...                                      # Move tina to another spot on the screen
 
 draw_polygon(...)                        # Draw a hexagon
 
