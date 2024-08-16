@@ -75,7 +75,7 @@ something like this:
 <img class = "c400" src="https://images.jointheleague.org/module-navigation/vscode.png">
 
 You are ready to start your lessons. You editor window should be displaying the README file, and
-at the bottom of that file it will tell you which lesson to start with. 
+at the bottom of that file it will tell you which lesson to start with, `lessons/lessons/00_Turtles/01_Get_Started.ipynb`
 
 ## Tip
 
