@@ -13,6 +13,22 @@ tell the user what age groups the user is in. The groups are:
 65+: Senior
 
 Except, if the user is the same age as you, print "You are pretty awesome!"
+
+Here is how you ask the user's age in integer format.  The first argument is 
+the title of the window, the second is the message to the user.
+
+age = simpledialog.askinteger("Your Age", "How old are you?")  # ;
+
+Or, you could ask the user for a float with simpledialog.askfloat() 
+
+age =  simpledialog.askfloat("Your Age", "How old are you?")  # ;
+
+
+Here is how you show the user a message window. The first parameter is the title of the window, 
+the second is the message to show the user.
+
+messagebox.showinfo('What you are', "You are a baby.")
+
 """
 
 from tkinter import messagebox, simpledialog, Tk # import required modules
@@ -20,18 +36,14 @@ from tkinter import messagebox, simpledialog, Tk # import required modules
 window = Tk()     # Create a window object
 window.withdraw() # Hide the window
 
-# Here is how you ask the user's age in integer format. 
-# The first argument is the title of the window, the second is the message to the user.
-age = simpledialog.askinteger("Your Age", "How old are you?")  # ;
+# Ask the user's age
 
-# You could also ask the user for a float with simpledialog.askfloat()
-# ( but only do one of them, not both)
-age =  simpledialog.askfloat("Your Age", "How old are you?")  # ;
+# Use if statements to determine the age group
+# and create a message
 
-# Here is how you show the user a message window
-# The first parameter is the title of the window, 
-# the second is the message to show the user.
-messagebox.showinfo('What you are', "You are a baby.")
+# Show the message to the user
+
+
 
 window.mainloop()  # Keeps the window open
 
