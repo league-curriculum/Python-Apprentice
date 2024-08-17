@@ -10,10 +10,10 @@ gs_ide
 
 To get started with this course, you will:
 
-1. Create an account on [Github](https://github.com)
-2. Tell us your Github name so we can track your progress
-3. Make a copy of the source code repository for the lesson
-4. Start the web-based programming editor to begin the lesson. 
+1. Create an account on [Github](https://github.com).
+2. Tell us your Github name so we can track your progress.
+3. Make a copy of the source code repository for the course.
+4. Start the web-based programming editor to begin the course. 
 
 ## 1: Get a Github Account
 
