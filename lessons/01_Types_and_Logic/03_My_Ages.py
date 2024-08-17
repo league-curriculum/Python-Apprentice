@@ -17,11 +17,11 @@ Except, if the user is the same age as you, print "You are pretty awesome!"
 Here is how you ask the user's age in integer format.  The first argument is 
 the title of the window, the second is the message to the user.
 
-age = simpledialog.askinteger("Your Age", "How old are you?")  # ;
+age = simpledialog.askinteger("Your Age", "How old are you?") 
 
 Or, you could ask the user for a float with simpledialog.askfloat() 
 
-age =  simpledialog.askfloat("Your Age", "How old are you?")  # ;
+age =  simpledialog.askfloat("Your Age", "How old are you?")
 
 
 Here is how you show the user a message window. The first parameter is the title of the window, 
@@ -34,7 +34,7 @@ messagebox.showinfo('What you are', "You are a baby.")
 from tkinter import messagebox, simpledialog, Tk # import required modules
 
 window = Tk()     # Create a window object
-window.withdraw() # Hide the window
+window.withdraw() # Hide the window; we just want to see pop ups
 
 # Ask the user's age
 
