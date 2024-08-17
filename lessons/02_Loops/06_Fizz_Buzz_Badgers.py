@@ -31,3 +31,4 @@ for i in range(1, 31): # Change only this line
 
 
 # hint: run the program once and look at the numbers that are printed.
+# Maybe iterate over those numbers.

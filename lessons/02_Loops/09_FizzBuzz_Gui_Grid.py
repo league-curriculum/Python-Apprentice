@@ -14,7 +14,8 @@ Additionally, If you are displaying a number  color the numbers as follows:
 * If the sum of the digits of the number is even, color the number blue
 * If the sum of the digits of the number is odd, color the number red
 
-Here is how you can display a number in your grid:
+Here is how you can display a number in your grid. Call this function in your loop
+to display the number in the grid cell at the row and column you specify.
 
     Text(app, text=str(number), grid=[col, row], color=color)
 
