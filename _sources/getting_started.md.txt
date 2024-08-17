@@ -29,7 +29,7 @@ Let us know your Github name so we can track your progress by filling out and su
 
 <iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-( If you aren't a League student you can skip it )
+If you aren't a League student you can skip it, but we'd still love to know who you are. 
 
 ## 3: Get the Source Code
 
@@ -46,6 +46,8 @@ Then, on the next page,   click on the
 This will copy the whole course into your Github account. 
 
 When the fork is finished, you can start your web based programming editor. 
+
+( If you are more currious, you can [visit the course repository](https://github.com/league-curriculum/Python-Apprentice), and then fork from there. )
 
 ## 4: Start the Codespace
 
