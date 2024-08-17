@@ -29,6 +29,8 @@ Let us know your Github name so we can track your progress by filling out and su
 
 <iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
+( If you aren't a League student you can skip it )
+
 ## 3: Get the Source Code
 
 Click this button to "fork" the source code:
@@ -54,8 +56,7 @@ menu item, then click on this big green button:
 
 <img class="c400" src="https://images.jointheleague.org/github/understand_workflows.png" >
 
-This will allow your repo to tell the League when you check in code, so we can
-track your progress. 
+This will allow your repo to tell The League when you check in code ( using a GIthub action in the .github directory ) , so we can track your progress. If you aren't a League student, you can skip it. 
 
 Now click on the <img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> 
 menu item to go back to the main page. 
