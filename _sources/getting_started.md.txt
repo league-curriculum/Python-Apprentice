@@ -17,7 +17,8 @@ To get started with this course, you will:
 
 ## 1: Get a Github Account
 
-Github is a professional source code repository, and almost everything you do at the League will involve Github. 
+Github is a professional source code repository, and almost everything you do at
+the League will involve Github, so let's start with creating a Github account. 
 
 <a href="https://github.com/signup" target="_blank">Create an Account at Github</a>
 
