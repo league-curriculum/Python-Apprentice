@@ -24,4 +24,4 @@ for color in colors:                            # loop through the colors
 
 ... # Your code here
 
-tina.done()
+turtle.exitonclick()                     # Close the window when we click on it
