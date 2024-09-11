@@ -10,14 +10,15 @@ gs_ide
 
 To get started with this course, you will:
 
-1. Create an account on [Github](https://github.com)
-2. Tell us your Github name so we can track your progress
-3. Make a copy of the source code repository for the lesson
-4. Start the web-based programming editor to begin the lesson. 
+1. Create an account on [Github](https://github.com).
+2. Tell us your Github name so we can track your progress.
+3. Make a copy of the source code repository for the course.
+4. Start the web-based programming editor to begin the course. 
 
 ## 1: Get a Github Account
 
-Github is a professional source code repository, and almost everything you do at the League will involve Github. 
+Github is a professional source code repository, and almost everything you do at
+the League will involve Github, so let's start with creating a Github account. 
 
 <a href="https://github.com/signup" target="_blank">Create an Account at Github</a>
 
@@ -28,6 +29,8 @@ If you already have an account, sign into it now.
 Let us know your Github name so we can track your progress by filling out and submitting this form:
 
 <iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+If you aren't a League student you can skip it, but we'd still love to know who you are. 
 
 ## 3: Get the Source Code
 
@@ -45,6 +48,8 @@ This will copy the whole course into your Github account.
 
 When the fork is finished, you can start your web based programming editor. 
 
+( If you are more currious, you can [visit the course repository](https://github.com/league-curriculum/Python-Apprentice), and then fork from there. )
+
 ## 4: Start the Codespace
 
 ### Enable progress reporting
@@ -54,8 +59,7 @@ menu item, then click on this big green button:
 
 <img class="c400" src="https://images.jointheleague.org/github/understand_workflows.png" >
 
-This will allow your repo to tell the League when you check in code, so we can
-track your progress. 
+This will allow your repo to tell The League when you check in code ( using a GIthub action in the .github directory ) , so we can track your progress. If you aren't a League student, you can skip it. 
 
 Now click on the <img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> 
 menu item to go back to the main page. 
