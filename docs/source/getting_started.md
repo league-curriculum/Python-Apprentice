@@ -28,7 +28,7 @@ If you already have an account, sign into it now.
 
 Let us know your Github name so we can track your progress by filling out and submitting this form:
 
-<iframe src="/forms/github.html" width="600" height="250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://student-registration.do.jointheleague.org/acct/register" width="700" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 If you aren't a League student you can skip it, but we'd still love to know who you are. 
 
