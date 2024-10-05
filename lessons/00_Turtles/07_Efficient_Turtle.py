@@ -8,7 +8,7 @@ can draw a square, pentagon, and hexagon with a single function
 
 
 import turtle                           # Tell Python we want to work with the turtle
-turtle.setup (width=600, height=600)    # Set the size of the window
+turtle.setup (width=600, height=600, startx=0, starty=0)    # Set the size of the window
 
 tina = turtle.Turtle()                  # Create a turtle named tina
 
