@@ -15,7 +15,7 @@ jobs:
         EVENT_TYPE: ${{ github.event_name }}
         DATE_TIME: ${{ github.event.head_commit.timestamp }}
       run: |
-        curl -X POST https://student-telem.do.jointheleague.org/github/activity \
+        curl -X POST https://student-registration.do.jointheleague.org/github/activity \
         -H "Content-Type: application/json" \
           -d '{"username": "'"${GITHUB_USERNAME}"'",  "date_time": "'"${DATE_TIME}"'", "repo_url": "'"${REPO_URL}"'", "commit": "'"${COMMIT}"'", "event_type": "'"${EVENT_TYPE}"'"}'
 
