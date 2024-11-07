@@ -18,6 +18,3 @@ window to open the first lesson, which is in the directory:
 
     lessons/lessons/00_Turtles/01_Get_Started.ipynb
 
-
-
-
