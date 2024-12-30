@@ -6,6 +6,8 @@ course is aligned with the [PCEP™ – Certified Entry-Level Python Programmer]
 exam from the Python Institue, so students who have completed this course
 will be familiar with all of material on the test. 
 
+
+
 ## Modules and PCEP Alignment
 
 The association between PCEP text sections and topics and the top level 
