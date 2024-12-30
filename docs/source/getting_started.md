@@ -34,7 +34,9 @@ If you aren't a League student you can skip it, but we'd still love to know who 
 
 ## 3: Get the Source Code
 
-Click this button to "fork" the source code:
+Click this button to "fork" the source code. "Forking" is a way to make a copy of
+the source code repository in your own Github account, but with a link back to
+our original, so you can get updates.
 
 <div class="centered">
 <span class="button green"><a href="https://github.com/league-curriculum/Python-Apprentice/fork" target="_blank" >
