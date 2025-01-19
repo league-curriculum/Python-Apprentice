@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   devcontainer:
     build:
@@ -7,10 +5,32 @@ services:
       dockerfile: .devcontainer/Dockerfile
     container_name: PythonApprentice
     ports:
-      - "8080:8080" # Access code-server
+      - 6080
+      - 8082:8082
     volumes:
       - .:/workspace
+
     environment:
       - PASSWORD=code4life # Optional: Secure access
+      - VSCODE_PROXY_URI=./proxy/{{port}}
+      - DISPLAY=novnc:0.0
     command: >
-      code-server --bind-addr 0.0.0.0:8080 /workspace
+      code-server --disable-workspace-trust  --bind-addr 0.0.0.0:8082 /workspace
+
+    networks:
+      - x11
+
+  novnc:  
+    image: ghcr.io/league-infrastructure/docker-novnc/docker-novnc:latest
+    environment:
+      # Adjust to your screen size
+      - DISPLAY_WIDTH=600
+      - DISPLAY_HEIGHT=600
+      - RUN_XTERM=no
+    ports:
+      - "8080:8080"
+    networks:
+      - x11
+
+networks:
+  x11:

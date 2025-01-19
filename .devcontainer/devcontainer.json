@@ -22,24 +22,27 @@
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/desktop-lite:1": {
-			"password" : "code4life"
-		}
+		//"ghcr.io/devcontainers/features/desktop-lite:1": {
+		//	"password" : "code4life"
+		//}
 	},
 
 
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts":  [8080, 6080, 5901],
+	"forwardPorts":  [8080, 6080],
 
 	"portsAttributes":  {
 		"6080":{
 			"label": "VNC Web Screen"
 		},
-		"5901":{
-			"label":"VNC App"
-		}
 	},
+
+	"runArgs": [
+		"-p", "8080:8080",  // Expose the code-server port
+		"-p", "6080:6080"
+	], 
+	"overrideCommand": false ,        // Ensure CMD in Dockerfile is used
 
 
 	// Use 'postCreateCommand' to run commands after the container is created.
@@ -55,12 +58,17 @@
 	    "vscode": {
 	      "extensions": [
 	        "ms-python.python",
+			"ms-python.vscode-pylance",
+        	"ms-python.autopep8",
 	        "ms-python.debugpy",
 			"ms-python.isort",
 			"ms-toolsai.jupyter"
 	      ], 
 		  "settings": {
-
+			"python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+			"[python]": {
+			  "editor.defaultFormatter": "ms-python.autopep8"
+			}
 		  }
 	    }
   	}
