@@ -24,15 +24,7 @@ the League will involve Github, so let's start with creating a Github account.
 
 If you already have an account, sign into it now. 
 
-## 2: Tell Us Your Github Name
-
-Let us know your Github name so we can track your progress by filling out and submitting this form:
-
-<iframe src="https://student-registration.do.jointheleague.org/acct/register" width="700" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-If you aren't a League student you can skip it, but we'd still love to know who you are. 
-
-## 3: Get the Source Code
+## 2: Get the Source Code
 
 Click this button to "fork" the source code. "Forking" is a way to make a copy of
 the source code repository in your own Github account, but with a link back to
@@ -52,23 +44,11 @@ When the fork is finished, you can start your web based programming editor.
 
 ( If you are more currious, you can [visit the course repository](https://github.com/league-curriculum/Python-Apprentice), and then fork from there. )
 
-## 4: Start the Codespace
-
-### Enable progress reporting
- After the code is forked, you wil see the web page for the course repository,
-named 'Python-Apprentice', in your Github account. Click on the <img class="inline" src="https://images.jointheleague.org/github/actions_menu.png">
-menu item, then click on this big green button:
-
-<img class="c400" src="https://images.jointheleague.org/github/understand_workflows.png" >
-
-This will allow your repo to tell The League when you check in code ( using a GIthub action in the .github directory ) , so we can track your progress. If you aren't a League student, you can skip it. 
-
-Now click on the <img class="inline" src="https://images.jointheleague.org/github/code_menu.png"> 
-menu item to go back to the main page. 
+## 3: Start the Codespace
 
 ### Create a new Codespace
 
-Next, on the main repository page,  look for the  <img class="inline" src="https://images.jointheleague.org/github/code_button.png"> 
+On the main repository page,  look for the  <img class="inline" src="https://images.jointheleague.org/github/code_button.png"> 
 button. Click on the button, and after the window pops up,  click on the "Codespaces" tab. It will look like this: 
 
 <img class="c400" src="https://images.jointheleague.org/module-navigation/create_codespace.png" >
