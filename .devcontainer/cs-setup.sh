@@ -13,10 +13,6 @@ code --extensions-dir /app/extensions \
 --install-extension "ms-python.isort" \
 --install-extension "ms-toolsai.jupyter" 
 
-echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.zshrc
 echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.bashrc
-echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.profile
 
 source ~/.bashrc
-
-

@@ -43,7 +43,7 @@
 
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "./.devcontainer/setup.sh",
+	"postCreateCommand": "./.devcontainer/cs-setup.sh",
 
 	"customizations": {
 	    "codespaces": {
