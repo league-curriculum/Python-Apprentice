@@ -1,0 +1,80 @@
+name: Python Apprentice
+description: Introduction to programming
+modules:
+- name: 00_Turtles
+  overview: 00_Turtles/README.md
+  lessons:
+  - name: Get Started
+    exercise: 00_Turtles/01_Get_Started.ipynb
+    display: false
+  - name: Meet Tina
+    exercise: 00_Turtles/02_Meet_Tina.py
+    display: true
+  - name: Check In Your Code
+    exercise: 00_Turtles/03_Check_In_Your_Code.ipynb
+    display: false
+  - name: Turtle Tricks
+    lessons:
+    - name: Turtle Tricks A
+      exercise: 00_Turtles/04a_Turtle_Tricks.py
+      display: true
+    - name: Turtle Tricks B
+      exercise: 00_Turtles/04b_Turtle_Tricks.py
+      display: true
+
+  - name: Loops
+    exercise: 00_Turtles/05a_Loops.ipynb
+    display: false
+  - name: Loop with Turtle
+    lessons:
+    - name: Loop with Turtle A
+      exercise: 00_Turtles/05b_Loop_with_Turtle.py
+      display: true
+
+  - name: Variables and Functions
+    lessons:
+    - name: Variables and Functions A
+      exercise: 00_Turtles/06a_Variables_and_Functions.ipynb
+      display: false
+    - name: Variables and Functions B
+      exercise: 00_Turtles/06b_Variables_and_Functions.ipynb
+      display: false
+  - name: Efficient Turtle
+    exercise: 00_Turtles/07_Efficient_Turtle.py
+    display: true
+  - name: More Turtle Programs
+    lessons:
+    - name: More Turtle Programs
+      exercise: 00_Turtles/08a_More_Turtle_Programs.ipynb
+      display: false
+    - name: More Turtle Programs
+      exercise: 00_Turtles/08c_More_Turtle_Programs.py
+      display: true
+    - name: More Turtle Programs
+      exercise: 00_Turtles/08d_More_Turtle_Programs.py
+      display: true
+  - name: More Turtle programs
+    exercise: 00_Turtles/08b_More_Turtle_programs.py
+    display: true
+  - name: LeagueBot
+    exercise: 00_Turtles/09_LeagueBot.py
+    display: true
+  - name: Tash Me
+    exercise: 00_Turtles/10a_Tash_Me.py
+    display: true
+  - name: Tash Me Click
+    exercise: 00_Turtles/10b_Tash_Me_Click.py
+  - name: Tash Me Twirl
+    exercise: 00_Turtles/10c_Tash_Me_Twirl.py
+  - name: Lists
+    exercise: 00_Turtles/11_Lists.ipynb
+    display: false
+  - name: Color Lines
+    exercise: 00_Turtles/12_Color_Lines.py
+    display: true
+  - name: Crazy Spiral
+    exercise: 00_Turtles/14_Crazy_Spiral.py
+    display: true
+  - name: Pentagon Crazy
+    exercise: 00_Turtles/15_Pentagon_Crazy.py
+    display: true

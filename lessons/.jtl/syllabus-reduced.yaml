@@ -1,0 +1,138 @@
+name: Python Apprentice
+description: Introduction to programming
+modules:
+- name: 00_Turtles
+  overview: 00_Turtles/README.md
+  lessons:
+  - name: Get Started
+    exercise: 00_Turtles/01_Get_Started.ipynb
+    display: false
+  - name: Meet Tina
+    exercise: 00_Turtles/02_Meet_Tina.py
+    display: true
+  - name: Check In Your Code
+    exercise: 00_Turtles/03_Check_In_Your_Code.ipynb
+    display: false
+  - name: Turtle Tricks
+    lessons:
+    - name: Turtle Tricks A
+      exercise: 00_Turtles/04a_Turtle_Tricks.py
+      display: true
+    - name: Turtle Tricks B
+      exercise: 00_Turtles/04b_Turtle_Tricks.py
+      display: true
+    - name: Turtle Tricks C
+      exercise: 00_Turtles/04c_Turtle_Tricks.py
+      display: true
+  - name: Loops
+    exercise: 00_Turtles/05a_Loops.ipynb
+    display: false
+  - name: Loop with Turtle
+    lessons:
+    - name: Loop with Turtle A
+      exercise: 00_Turtles/05b_Loop_with_Turtle.py
+      display: true
+    - name: Loop with Turtle B
+      exercise: 00_Turtles/05c_Loop_with_Turtle.py
+  - name: Variables and Functions
+    lessons:
+    - name: Variables and Functions A
+      exercise: 00_Turtles/06a_Variables_and_Functions.ipynb
+      display: false
+    - name: Variables and Functions B
+      exercise: 00_Turtles/06b_Variables_and_Functions.ipynb
+      display: false
+  - name: Efficient Turtle
+    exercise: 00_Turtles/07_Efficient_Turtle.py
+    display: true
+  - name: More Turtle Programs
+    lessons:
+    - name: More Turtle Programs
+      exercise: 00_Turtles/08a_More_Turtle_Programs.ipynb
+      display: false
+    - name: More Turtle Programs
+      exercise: 00_Turtles/08c_More_Turtle_Programs.py
+      display: true
+    - name: More Turtle Programs
+      exercise: 00_Turtles/08d_More_Turtle_Programs.py
+      display: true
+  - name: More Turtle programs
+    exercise: 00_Turtles/08b_More_Turtle_programs.py
+    display: true
+  - name: LeagueBot
+    exercise: 00_Turtles/09_LeagueBot.py
+    display: true
+  - name: Tash Me
+    exercise: 00_Turtles/10a_Tash_Me.py
+    display: true
+  - name: Tash Me Click
+    exercise: 00_Turtles/10b_Tash_Me_Click.py
+    display: true
+- name: 01_Types_and_Logic
+  overview: 01_Types_and_Logic/README.md
+  lessons:
+  - name: Numbers and Strings
+    exercise: 01_Types_and_Logic/01_Numbers_and_Strings.ipynb
+  - name: Control Flow
+    exercise: 01_Types_and_Logic/02_Control_Flow.ipynb
+  - name: My Ages
+    exercise: 01_Types_and_Logic/03_My_Ages.py
+    display: true
+  - name: Simple Adder
+    exercise: 01_Types_and_Logic/04_Simple_Adder.py
+  - name: Infuriating Calculator
+    exercise: 01_Types_and_Logic/05_Infuriating_Calculator.py
+  - name: Code Challenges
+    exercise: 01_Types_and_Logic/07_Code_Challenges.ipynb
+- name: 02_Loops
+  overview: 02_Loops/README.md
+  lessons:
+  - name: Iteration
+    exercise: 02_Loops/01_Iteration.ipynb
+  - name: Loops with Range
+    exercise: 02_Loops/02_Loops_with_Range.ipynb
+  - name: Lists
+    exercise: 02_Loops/03a_Lists.ipynb
+    display: false
+  - name: Crazy Tina
+    exercise: 02_Loops/03b_Crazy_Tina.py
+    display: true
+  - name: Tuples
+    exercise: 02_Loops/03c_Tuples.ipynb
+  - name: Indexing and Slicing
+    exercise: 02_Loops/04a_Indexing_and_Slicing.ipynb
+  - name: List Story
+    exercise: 02_Loops/04b_List_Story.py
+  - name: Strings
+    exercise: 02_Loops/05_Strings.ipynb
+  - name: Fizz Buzz Badgers
+    exercise: 02_Loops/06_Fizz_Buzz_Badgers.py
+  - name: For Loop Gauntlet
+    exercise: 02_Loops/07_For_Loop_Gauntlet.ipynb
+  - name: FizzBuzz Gui Grid
+    exercise: 02_Loops/09_FizzBuzz_Gui_Grid.py
+  - name: More Iterables
+    exercise: 02_Loops/10_More_Iterables.ipynb
+    display: false
+  - name: Iterable Turtle
+    exercise: 02_Loops/11_Iterable_Turtle.ipynb
+    display: false
+  - name: More Loops
+    exercise: 02_Loops/12_More_Loops.ipynb
+  - name: Number Guess
+    exercise: 02_Loops/13_Number_Guess.py
+  - name: Extras
+    exercise: 02_Loops/99_Extras.ipynb
+- name: 03_Data_Structures_Func
+  overview: 03_Data_Structures_Func/README.md
+  lessons:
+  - name: Functions
+    exercise: 03_Data_Structures_Func/01_Functions.ipynb
+  - name: Dicts Sets
+    exercise: 03_Data_Structures_Func/02_Dicts_Sets.ipynb
+  - name: Funny Words Db
+    exercise: 03_Data_Structures_Func/04_Funny_Words_Db.py
+  - name: Splat Comprehension
+    exercise: 03_Data_Structures_Func/05_Splat_Comprehension.ipynb
+  - name: Tic Tac Toe
+    exercise: 03_Data_Structures_Func/06_Tic_Tac_Toe.py
