@@ -1,14 +1,17 @@
 name: Python Apprentice
 description: Introduction to programming
+module_dir: ../
 modules:
 - name: 00_Turtles
   overview: 00_Turtles/README.md
   lessons:
   - name: Get Started
     exercise: 00_Turtles/01_Get_Started.ipynb
+    lesson: https://realpython.com/beginners-guide-python-turtle/
     display: false
   - name: Meet Tina
     exercise: 00_Turtles/02_Meet_Tina.py
+    lesson: https://www.madpenguin.org/how-to-use-python-turtle/
     display: true
   - name: Check In Your Code
     exercise: 00_Turtles/03_Check_In_Your_Code.ipynb

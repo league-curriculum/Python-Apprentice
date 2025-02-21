@@ -1,5 +1,6 @@
 name: Python Apprentice
 description: Introduction to programming
+module_dir: ../
 modules:
 - name: 00_Turtles
   overview: 00_Turtles/README.md
