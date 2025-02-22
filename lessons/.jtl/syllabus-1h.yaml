@@ -7,12 +7,12 @@ modules:
   lessons:
   - name: Get Started
     exercise: 00_Turtles/01_Get_Started.ipynb
-    lesson: https://realpython.com/beginners-guide-python-turtle/
+    lesson: https://docs.python.org/3/tutorial/index.html
     display: false
   - name: Meet Tina
     exercise: 00_Turtles/02_Meet_Tina.py
-    lesson: https://www.madpenguin.org/how-to-use-python-turtle/
-    display: true
+    lesson: https://docs.python.org/3/library/index.html
+    display: false
   - name: Check In Your Code
     exercise: 00_Turtles/03_Check_In_Your_Code.ipynb
     display: false
