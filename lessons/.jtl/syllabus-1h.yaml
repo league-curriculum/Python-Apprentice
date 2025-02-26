@@ -12,7 +12,7 @@ modules:
   - name: Meet Tina
     exercise: 00_Turtles/02_Meet_Tina.py
     lesson: https://docs.python.org/3/library/index.html
-    display: false
+    display: true
   - name: Check In Your Code
     exercise: 00_Turtles/03_Check_In_Your_Code.ipynb
     display: false
