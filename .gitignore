@@ -43,7 +43,7 @@ coverage.xml
 .ipynb_checkpoints
 
 # IDE / Editor directories and files
-.vscode/
+
 .idea/
 
 # Logs
@@ -54,3 +54,5 @@ coverage.xml
 *.swp
 
 saved/
+
+.jtl/*completion*
