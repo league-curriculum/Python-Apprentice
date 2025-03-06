@@ -17,6 +17,20 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 
 # Use tina.circle() to draw a circle, and tina.goto() to move tina to a new location
 # Use tina.begin_fill(), tina.end_fill(), and tina.fillcolor() to fill in the shapes
+tina.penup()
+tina.goto(100,100)
+tina.pendown()
+tina.begin_fill()
+tina.fillcolor('red')
+tina.circle(101, steps = 50)
+tina.end_fill()
+tina.penup() 
+tina.goto(100,0)
+tina.pendown()
+tina.begin_fill()
+tina.fillcolor('blue')
+tina.circle(101, steps = 50)
+tina.end_fill()
 
 
 ... # Your code here
