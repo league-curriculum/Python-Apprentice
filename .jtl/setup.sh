@@ -6,14 +6,17 @@ THIS_DIR=$(dirname "$(realpath "$0")")
 
 cd $TARGET_DIR
 
+# Create a virtual environment and install the requirements.
 (
     cd $TARGET_DIR && \
     python -mvenv .venv && \
     source .venv/bin/activate && \
     python -mpip install --upgrade pip && \
-    pip3 install  -r .jtl/requirements.txt
+    pip3 install  -r $THIS_DIR/requirements.txt
 )
 
+# Git will ask how you want to merge when you pull, 
+# and it's confusing to students. 
 git config --global pull.rebase true
 
 # Put a newline in the prompt to make it easier to read.
