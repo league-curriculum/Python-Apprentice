@@ -5,7 +5,7 @@ base_dir := $(abspath $(this_dir)/..)
 
 .PHONY: config
 
-VERSION := "1.0.20250308"
+VERSION := "1.20250308.1"
 
 ver:
 	@echo $(VERSION)
