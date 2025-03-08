@@ -1,9 +1,7 @@
 #!/bin/bash
 
-pip3 install --upgrade pip
-pip3 install  -r requirements.txt
-
-git config --global pull.rebase true
+# Install required extensions. Not in the setup.sh 
+# because this is much better to do in the Dockerfile.
 
 code --extensions-dir /app/extensions \
 --install-extension "ms-python.python" \
