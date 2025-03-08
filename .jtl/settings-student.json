@@ -11,6 +11,6 @@
     "**/.ipynb_checkpoints": true,
     "**/.venv": true,
     "**/.lib": true,
-    "**/.jtl": true,
+    "**/.jtl": true
   }
 }
