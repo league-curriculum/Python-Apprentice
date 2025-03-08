@@ -15,6 +15,4 @@ git config --global pull.rebase true
 echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.bashrc
 echo 'export PS1="${PS1}\n$ "' >> ~/.bashrc
 
-
-
-cp $THIS_DIR/.jtl/ ~/.bash_aliases
+cp $THIS_DIR/.jtl/settings-student.json .vscode/settings.json

@@ -105,8 +105,6 @@ modules:
   - name: Code Challenges
     exercise: 01_Types_and_Logic/07_Code_Challenges.ipynb
 
-  - name: to random
-    exercise: 01_Types_and_Logic/intro_to_random.py
 - name: 02_Loops
   overview: 02_Loops/README.md
   lessons:
