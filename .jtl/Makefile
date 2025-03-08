@@ -5,9 +5,21 @@ base_dir := $(abspath $(this_dir)/..)
 
 .PHONY: config
 
+VERSION := "1.0.20250308"
+
+ver:
+	@echo $(VERSION)
+
+push:
+	git commit --allow-empty -a -m "Release version $(VERSION)"
+	git push
+	git tag v$(VERSION) 
+	git push --tags
+
+
+
 config:
 	@echo "base_dir: $(base_dir) "
-
 
 # Install the student version of settings.json, which wil hide a lot of dot files. 
 student-config:
