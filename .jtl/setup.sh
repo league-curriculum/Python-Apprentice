@@ -2,13 +2,12 @@
 
 TARGET_DIR=$1
 
-THIS_DIR=$(dirname "$(dirname "$(realpath "$0")")")
+THIS_DIR=$(dirname "$(realpath "$0")")
 
 cd $TARGET_DIR
 
-
 (
-    cd ../ && \
+    cd $TARGET_DIR && \
     python -mvenv .venv && \
     source .venv/bin/activate && \
     python -mpip install --upgrade pip && \
