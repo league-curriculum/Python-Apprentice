@@ -4,6 +4,10 @@ TARGET_DIR=$1
 
 THIS_DIR=$(dirname "$(realpath "$0")")
 
+echo "❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖"
+echo "TARGET_DIR: $TARGET_DIR"
+echo "THIS_DIR: $THIS_DIR"
+
 cd $TARGET_DIR
 
 # Create a virtual environment and install the requirements.
