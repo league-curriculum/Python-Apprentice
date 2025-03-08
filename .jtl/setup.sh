@@ -2,7 +2,7 @@
 
 TARGET_DIR=$1
 
-THIS_DIR=$(dirname "$(realpath "$0")")
+THIS_DIR=$(dirname "$(dirname "$(realpath "$0")")")
 
 cd $TARGET_DIR
 
@@ -12,7 +12,7 @@ cd $TARGET_DIR
     python -mvenv .venv && \
     source .venv/bin/activate && \
     python -mpip install --upgrade pip && \
-    pip3 install  -r requirements.txt
+    pip3 install  -r .jtl/requirements.txt
 )
 
 git config --global pull.rebase true
@@ -22,4 +22,4 @@ echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.bashrc
 echo 'export PS1="${PS1}\n$ "' >> ~/.bashrc
 
 # Install workspace settings. 
-cp $THIS_DIR/.jtl/settings-student.json .vscode/settings.json
+cp $THIS_DIR/settings-student.json $TARGET_DIR/.vscode/settings.json
