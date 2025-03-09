@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 TARGET_DIR=$1
 
