@@ -13,6 +13,7 @@
     ".lib": true,
     ".jtl": true,
     "requirements.txt": true,
-    "**/.DS_Store": true
+    "**/.DS_Store": true,
+    ".lessons": true
   }
 }
