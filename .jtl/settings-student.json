@@ -1,9 +1,10 @@
 {
   "files.exclude": {
     ".git": true,
-    "**/.DS_Store": true,
-    ".vscode": true,
     ".github": true,
+    ".gitignore": true,
+    ".gitattributes": true,
+    ".vscode": true,
     ".yarn": true,
     ".devcontainer": true,
     "**/node_modules": true,
@@ -11,6 +12,7 @@
     ".venv": true,
     ".lib": true,
     ".jtl": true,
-    "requirements.txt": true
+    "requirements.txt": true,
+    "**/.DS_Store": true
   }
 }
