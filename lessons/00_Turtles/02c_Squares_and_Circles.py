@@ -5,8 +5,7 @@ lines inside the three quotes are also comments, but of a different sort (
 called "doc comments" ) Comments are used to explain what the code does. Read
 the program and try to understand what each line does.
 
-RUN ME! You can run this program by clicking on ▶️ icon ar the top of the editor
-window.
+
 
 """
 

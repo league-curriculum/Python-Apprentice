@@ -5,12 +5,24 @@ modules:
 - name: 00_Turtles
   overview: lessons/00_Turtles/README.md
   lessons:
-  - name: Get Started
-    exercise: lessons/00_Turtles/01_Get_Started.ipynb
+  - name: Welcome
+    exercise: lessons/00_Turtles/01a_Welcome.ipynb
+    display: false
+  - name: Running Programs
+    exercise: lessons/00_Turtles/01c_Run_Programs.ipynb
     display: false
   - name: Meet Tina
-    exercise: lessons/00_Turtles/02_Meet_Tina.py
+    exercise: lessons/00_Turtles/02a_Meet_Tina.py
+    lesson: .lessons/02a_Meet_Tina.md
     display: true
+  - name: What Can Tina Do?
+    exercise: lessons/00_Turtles/02b_What_Can_Tina_Do.ipynb
+    display: false   
+    
+  - name: Squares and Circles
+    exercise: lessons/00_Turtles/02c_Squares_and_Circles.py
+    lesson: .lessons/02c_Squares_and_Circles.md
+    display: false  
   - name: Check In Your Code
     exercise: lessons/00_Turtles/03_Check_In_Your_Code.ipynb
     display: false

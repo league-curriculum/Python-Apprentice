@@ -7,7 +7,7 @@ You can run this program by:
 1) clicking on ▶️ icon ar the top of the editor
 window
 2) Hit the F5 function key
-3) Press the green run button on the left side of the editor window.
+
 
 You won't understand what this program is doing just yet, but don't
 worry, that's what you will be learning in the next few lessons.
