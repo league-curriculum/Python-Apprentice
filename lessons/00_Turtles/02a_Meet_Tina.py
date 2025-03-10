@@ -2,8 +2,16 @@
 
 Run this program to meet Tina the Turtle. Tina is a hexagon with legs and a head.
 
-You can run this program by clicking on ▶️ icon ar the top of the editor
-window, or the green run button  on the left side of the editor window.
+You can run this program by:
+
+1) clicking on ▶️ icon ar the top of the editor
+window
+2) Hit the F5 function key
+3) Press the green run button on the left side of the editor window.
+
+You won't understand what this program is doing just yet, but don't
+worry, that's what you will be learning in the next few lessons.
+
 """
 
 import turtle                           # Tell Python we want to work with the turtle
@@ -14,7 +22,7 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 tina.speed('fastest')                   # Set the speed of the turtle to fastest
 
 # Draw the hexagon
-tina.penup()
+tina.penup()                            # Lift the pen up so we can move tina without drawing
 tina.goto(-100, 175)                    # Move tina to the starting position
 tina.pendown()
 tina.begin_fill()
@@ -79,7 +87,7 @@ def say_hello():
     tina.penup()
     tina.goto(75, head_pos()+75)         # Move tina to the position for the text
     tina.pendown()
-    tina.write("Hello! I'm Tina", font=("Arial", 20, "normal"))  # Write the text
+    tina.write("Hello! I'm Tina!", font=("Arial", 20, "normal"))  # Write the text
 
 draw_head() 
 
