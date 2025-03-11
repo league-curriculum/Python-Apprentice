@@ -18,14 +18,11 @@ modules:
   - name: What Can Tina Do?
     exercise: lessons/00_Turtles/02b_What_Can_Tina_Do.ipynb
     display: false   
-    
   - name: Squares and Circles
     exercise: lessons/00_Turtles/02c_Squares_and_Circles.py
     lesson: .lessons/02c_Squares_and_Circles.md
     display: true  
-  - name: Check In Your Code
-    exercise: lessons/00_Turtles/03_Check_In_Your_Code.ipynb
-    display: false
+
   - name: Turtle Tricks
     lessons:
     - name: Turtle Tricks A
