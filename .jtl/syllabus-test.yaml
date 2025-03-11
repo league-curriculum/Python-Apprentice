@@ -27,4 +27,6 @@ modules:
     exercise: lessons/00_Turtles/02a_Meet_Tina.py
     terminal: true  
   
-  
+  - name: Running Programs
+    exercise: lessons/00_Turtles/01c_Run_Programs.ipynb
+    display: false
