@@ -4,6 +4,7 @@
     ".github": true,
     ".gitignore": true,
     ".gitattributes": true,
+    ".pylintrc": true,
     ".vscode": true,
     ".yarn": true,
     ".devcontainer": true,

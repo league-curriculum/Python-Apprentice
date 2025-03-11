@@ -19,7 +19,7 @@ tina.speed(2)                           # Make the turtle move as fast, but not 
 
 ##
 ## Move Tina to the Starting Position
-##
+#
 
 tina.penup()                            # Lift the pen up so we can move tina without drawing
 tina.goto(-100, 100)                    # Move tina to the starting position

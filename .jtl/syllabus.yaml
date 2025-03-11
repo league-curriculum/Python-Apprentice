@@ -22,7 +22,7 @@ modules:
   - name: Squares and Circles
     exercise: lessons/00_Turtles/02c_Squares_and_Circles.py
     lesson: .lessons/02c_Squares_and_Circles.md
-    display: false  
+    display: true  
   - name: Check In Your Code
     exercise: lessons/00_Turtles/03_Check_In_Your_Code.ipynb
     display: false
