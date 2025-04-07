@@ -1,6 +1,7 @@
 """
 
-Run this program to meet Tina the Turtle. Tina is a hexagon with legs and a head.
+Run this program to meet Tina the Turtle. Tina is a
+hexagon with legs and a head.
 
 You can run this program by:
 
@@ -9,8 +10,9 @@ window
 2) Hit the F5 function key
 
 
-You won't understand what this program is doing just yet, but don't
-worry, that's what you will be learning in the next few lessons.
+You won't understand what this program is doing just
+yet, but don't worry, that's what you will be
+learning in the next few lessons.
 
 """
 
@@ -74,7 +76,7 @@ def draw_leg(t, a, r=170, w=40, l=50):
 def draw_head():
     """Draw a brown head at the head position"""
     tina.penup()
-    tina.goto(0, head_pos()-20)             # Move tina to the head position
+    tina.goto(0, head_pos()-20)          # Move tina to the head position
     tina.pendown()
     tina.pencolor('brown')               # Set the pen color to brown
     tina.fillcolor('brown')              # Set the fill color to brown
@@ -94,7 +96,7 @@ draw_head()
 for lp in (30, -30, -150, 150):
     draw_leg(tina, lp)                   # Draw the legs at the specified angles
 
-draw_leg(tina, -90, r=170, w=10, l=50)        # This one is actually a tail!
+draw_leg(tina, -90, r=170, w=10, l=50)   # This one is actually a tail!
 
 draw_body(tina)                          # Draw the body of the turtle
 
