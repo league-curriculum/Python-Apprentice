@@ -16,6 +16,6 @@ First, read the Getting Started guide at
 Next, after you've started the Codespaces editor, click on the file browser in the left of the 
 window to open the first lesson, which is in the directory:
 
-    lessons/00_Turtles/01_Get_Started.ipynb
+    lessons/00_Turtles/01a_Welcome.ipynb
 
 
