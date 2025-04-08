@@ -9,7 +9,6 @@ You can run this program by:
 window
 2) Hit the F5 function key
 
-
 You won't understand what this program is doing just
 yet, but don't worry, that's what you will be
 learning in the next few lessons.
