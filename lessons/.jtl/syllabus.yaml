@@ -1,0 +1,213 @@
+name: Python Apprentice
+module_dir: ..
+uid: 283c41e4-8abe-49bd-9335-e19ba693277b
+modules:
+- name: Turtles
+  uid: Io0hFJiW
+  lessons:
+  - name: Welcome
+    uid: AZCeRx3O
+    lessons:
+    - name: Welcome
+      uid: RRTPqCQu
+      exercise: 10_Turtles/10_Welcome/10_Welcome.ipynb
+    - name: Open The Screen
+      uid: KmgIQbhr
+      exercise: 10_Turtles/10_Welcome/20_Open_The_Screen.ipynb
+    - name: Run Programs
+      uid: cNLK6qtR
+      exercise: 10_Turtles/10_Welcome/30_Run_Programs.ipynb
+  - name: Introducing Tina
+    uid: NtvhO8WR
+    lessons:
+    - name: Meet Tina
+      uid: tvO1dlwm
+      lesson: 10_Turtles/20_Introducing_Tina/10_Meet_Tina/README.md
+      exercise: 10_Turtles/20_Introducing_Tina/10_Meet_Tina/Meet_Tina.py
+      display: true
+    - name: What Can Tina Do
+      uid: 7tUP3zAZ
+      exercise: 10_Turtles/20_Introducing_Tina/20_What_Can_Tina_Do.ipynb
+    - name: Squares and Circles
+      uid: E7KlecQ3
+      lesson: 10_Turtles/20_Introducing_Tina/30_Squares_and_Circles/README.md
+      exercise: 10_Turtles/20_Introducing_Tina/30_Squares_and_Circles/Squares_and_Circles.py
+      display: true
+    - name: Check In Your Code
+      uid: doD6P7fk
+      exercise: 10_Turtles/20_Introducing_Tina/40_Check_In_Your_Code.ipynb
+  - name: Turtle Tricks
+    uid: c6l7hD7a
+    lessons:
+    - name: Turtle Tricks
+      exercise: 10_Turtles/30_Turtle_Tricks/10_Turtle_Tricks.py
+      display: true
+    - name: Turtle Tricks
+      exercise: 10_Turtles/30_Turtle_Tricks/20_Turtle_Tricks.py
+      display: true
+    - name: Turtle Tricks
+      exercise: 10_Turtles/30_Turtle_Tricks/30_Turtle_Tricks.py
+      display: true
+  - name: Loops
+    uid: wVDXfv96
+    lessons:
+    - name: Loops
+      uid: abX8sNwB
+      exercise: 10_Turtles/40_Loops/10_Loops.ipynb
+    - name: Loop with Turtle
+      exercise: 10_Turtles/40_Loops/20_Loop_with_Turtle.py
+      display: true
+    - name: Loop with Turtle
+      exercise: 10_Turtles/40_Loops/30_Loop_with_Turtle.py
+  - name: Variables and Functions
+    uid: O1qsljMz
+    lessons:
+    - name: Variables and Functions
+      uid: HOBo0wvj
+      exercise: 10_Turtles/50_Variables_and_Functions/10_Variables_and_Functions.ipynb
+    - name: Variables and Functions
+      uid: 0CwXIYSb
+      exercise: 10_Turtles/50_Variables_and_Functions/20_Variables_and_Functions.ipynb
+    - name: Efficient Turtle
+      exercise: 10_Turtles/50_Variables_and_Functions/30_Efficient_Turtle.py
+      display: true
+  - name: More Turtle Programs
+    uid: I4bCPbWz
+    lessons:
+    - name: More Turtle Programs
+      uid: IloYptI2
+      exercise: 10_Turtles/60_More_Turtle_Programs/10_More_Turtle_Programs.ipynb
+    - name: More Turtle programs
+      exercise: 10_Turtles/60_More_Turtle_Programs/20_More_Turtle_programs.py
+    - name: More Turtle Programs
+      exercise: 10_Turtles/60_More_Turtle_Programs/30_More_Turtle_Programs.py
+    - name: More Turtle Programs
+      exercise: 10_Turtles/60_More_Turtle_Programs/40_More_Turtle_Programs.py
+  - name: Projects
+    uid: eo3RVnyt
+    lessons:
+    - name: LeagueBot
+      exercise: 10_Turtles/70_Projects/10_LeagueBot.py
+      display: true
+    - name: Tash Me
+      exercise: 10_Turtles/70_Projects/20_Tash_Me.py
+    - name: Tash Me Click
+      exercise: 10_Turtles/70_Projects/30_Tash_Me_Click.py
+    - name: Tash Me Twirl
+      exercise: 10_Turtles/70_Projects/40_Tash_Me_Twirl.py
+  - name: Introducting Lists
+    uid: g4kLhJ2U
+    lessons:
+    - name: Lists
+      uid: 0KEhJUGe
+      exercise: 10_Turtles/80_Introducting_Lists/10_Lists.ipynb
+    - name: Color Lines
+      exercise: 10_Turtles/80_Introducting_Lists/20_Color_Lines.py
+      display: true
+  - name: Graphics Projects
+    uid: 3shr4ruR
+    lessons:
+    - name: Flaming Ninja Star
+      exercise: 10_Turtles/90_Graphics_Projects/10_Flaming_Ninja_Star.py
+      display: true
+    - name: Crazy Spiral
+      exercise: 10_Turtles/90_Graphics_Projects/20_Crazy_Spiral.py
+    - name: Pentagon Crazy
+      exercise: 10_Turtles/90_Graphics_Projects/30_Pentagon_Crazy.py
+      display: true
+    - name: Turtle Spiral
+      exercise: 10_Turtles/90_Graphics_Projects/40_Turtle_Spiral.py
+      display: true
+- name: Types and Logic
+  uid: ryHvW6vk
+  lessons:
+  - name: Numbers and Strings
+    uid: HXQZ0Iui
+    exercise: 20_Types_and_Logic/10_Numbers_and_Strings.ipynb
+  - name: Control Flow
+    uid: g6JPkFUs
+    exercise: 20_Types_and_Logic/20_Control_Flow.ipynb
+  - name: My Ages
+    exercise: 20_Types_and_Logic/30_My_Ages.py
+    display: true
+  - name: Simple Adder
+    exercise: 20_Types_and_Logic/40_Simple_Adder.py
+  - name: Infuriating Calculator
+    exercise: 20_Types_and_Logic/50_Infuriating_Calculator.py
+  - name: Code Challenges
+    uid: jJI6aomB
+    exercise: 20_Types_and_Logic/60_Code_Challenges.ipynb
+- name: Loops
+  uid: TzgRqJlw
+  lessons:
+  - name: Iteration
+    uid: ITpqcvxv
+    exercise: 30_Loops/010_Iteration.ipynb
+  - name: Loops with Range
+    uid: WcGpR3Xg
+    exercise: 30_Loops/020_Loops_with_Range.ipynb
+  - name: Lists
+    uid: 7zsKa84X
+    exercise: 30_Loops/030_Lists.ipynb
+  - name: Crazy Tina
+    exercise: 30_Loops/040_Crazy_Tina.py
+    display: true
+  - name: Tuples
+    uid: 9zTQza2e
+    exercise: 30_Loops/050_Tuples.ipynb
+  - name: Indexing and Slicing
+    uid: P27f2L8k
+    exercise: 30_Loops/060_Indexing_and_Slicing.ipynb
+  - name: List Story
+    exercise: 30_Loops/070_List_Story.py
+  - name: Strings
+    uid: Tmg4QRhJ
+    exercise: 30_Loops/080_Strings.ipynb
+  - name: Fizz Buzz Badgers
+    exercise: 30_Loops/090_Fizz_Buzz_Badgers.py
+  - name: For Loop Gauntlet
+    uid: 8yGSkBgV
+    exercise: 30_Loops/100_For_Loop_Gauntlet.ipynb
+  - name: FizzBuzz Gui Grid
+    exercise: 30_Loops/110_FizzBuzz_Gui_Grid.py
+    display: true
+  - name: More Iterables
+    uid: PrKwTywv
+    exercise: 30_Loops/120_More_Iterables.ipynb
+  - name: Iterable Turtle
+    uid: vTyp2WhX
+    exercise: 30_Loops/130_Iterable_Turtle.ipynb
+  - name: More Loops
+    uid: RMSFNtMb
+    exercise: 30_Loops/140_More_Loops.ipynb
+  - name: Number Guess
+    exercise: 30_Loops/150_Number_Guess.py
+  - name: Extras
+    uid: VJSgvOr5
+    exercise: 30_Loops/160_Extras.ipynb
+- name: Data Structures Func
+  uid: fDPxSid0
+  lessons:
+  - name: Functions
+    uid: 4LyScnS5
+    exercise: 40_Data_Structures_Func/10_Functions.ipynb
+  - name: Dicts Sets
+    uid: VXQdZcqg
+    exercise: 40_Data_Structures_Func/20_Dicts_Sets.ipynb
+  - name: Funny Words Db
+    exercise: 40_Data_Structures_Func/30_Funny_Words_Db.py
+    display: true
+  - name: Splat Comprehension
+    uid: mU94qia6
+    exercise: 40_Data_Structures_Func/40_Splat_Comprehension.ipynb
+  - name: Tic Tac Toe
+    exercise: 40_Data_Structures_Func/50_Tic_Tac_Toe.py
+    display: true
+- name: Projects
+  uid: rLq5eVeW
+  lessons:
+  - name: Hotel Management
+    lesson: 50_Projects/10_Hotel_Management.md
+  - name: Random Walk
+    exercise: 50_Projects/20_Random_Walk.py
+    display: true
