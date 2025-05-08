@@ -9,7 +9,7 @@ Copy lines of code from those programs to this one to draw a triangle.
 
 # These lines are needed in most turtle programs
 import turtle                           # Tell Python we want to work with the turtle
-turtle.setup (width=600, height=600)    # Set the size of the window
+turtle.setup(600,600,0,0)               # Set the size of the window
 
 tina = turtle.Turtle()                  # Create a turtle named tina
 

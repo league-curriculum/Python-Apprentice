@@ -19,7 +19,7 @@ colors = ["red", "blue", "green", "yellow", "orange"]
 def getNextColor(i):
     return colors[i % len(colors)]
 
-turtle.setup (width=600, height=600) 
+turtle.setup(600,600,0,0)               # Set the size of the window
 window = turtle.Screen()
 
 baseSize = 200  # the size of the black part of the star
