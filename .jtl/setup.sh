@@ -4,7 +4,7 @@ set -x
 TARGET_DIR=$1
 THIS_DIR=$(dirname "$(realpath "$0")")
 
-SYLLABUS_EXTENSION=https://github.com/league-infrastructure/league-vscode-ext/releases/download/v1.20250509.6/jtl-syllabus-v1.20250509.6.vsix
+SYLLABUS_EXTENSION=https://github.com/league-infrastructure/league-vscode-ext/releases/download/v1.20250510.2/jtl-syllabus-v1.20250510.2.vsix
 
 echo "❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖"
 echo "TARGET_DIR: $TARGET_DIR"
@@ -30,14 +30,16 @@ echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.bashrc
 echo 'export PS1="${PS1}\n$ "' >> ~/.bashrc
 
 # Install workspace settings. 
-cp $THIS_DIR/settings-student.json $TARGET_DIR/.vscode/settings.json
+# cp $THIS_DIR/settings-student.json $TARGET_DIR/.vscode/settings.json
+# This is now done in the League VSCode extension.4
 
 # Fetch the syllabus extension to /vscode/extensionsCache/
 mkdir -p /vscode/extensionsCache/
-curl -L $SYLLABUS_EXTENSION -o /vscode/extensionsCache/$(basename $SYLLABUS_EXTENSION)
+ext_target=/vscode/extensionsCache/$(basename $SYLLABUS_EXTENSION)
+curl -L $SYLLABUS_EXTENSION -o $ext_target
 
 base_name=$(basename "$SYLLABUS_EXTENSION" .vsix)
 target_dir="$TARGET_DIR/.vscode/extensions/$base_name"
 mkdir -p "$target_dir"
-unzip -q "$vsix_file" -d "$target_dir"
+unzip -q "$ext_target" -d "$target_dir"
 
