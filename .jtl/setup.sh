@@ -35,11 +35,10 @@ echo 'export PS1="${PS1}\n$ "' >> ~/.bashrc
 
 # Fetch the syllabus extension to /vscode/extensionsCache/
 mkdir -p /vscode/extensionsCache/
-ext_target=/vscode/extensionsCache/$(basename $SYLLABUS_EXTENSION)
-curl -L $SYLLABUS_EXTENSION -o $ext_target
-
+curl -L $SYLLABUS_EXTENSION -o /vscode/extensionsCache/$(basename $SYLLABUS_EXTENSION)
+vsix_file="/vscode/extensionsCache/$(basename $SYLLABUS_EXTENSION)"
 base_name=$(basename "$SYLLABUS_EXTENSION" .vsix)
 target_dir="$TARGET_DIR/.vscode/extensions/$base_name"
 mkdir -p "$target_dir"
-unzip -q "$ext_target" -d "$target_dir"
+unzip -q "$vsix_file" -d "$target_dir"
 
