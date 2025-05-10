@@ -56,3 +56,4 @@ coverage.xml
 saved/
 
 .jtl/*completion*
+.vscode

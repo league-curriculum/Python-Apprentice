@@ -1,3 +1,3 @@
-FROM ghcr.io/league-infrastructure/jtlpython:20240719
-ENV VNC_RESOLUTION=600x600x16
+
+FROM  ghcr.io/league-examples/python-devcontainer:v1.20250414.2
 
