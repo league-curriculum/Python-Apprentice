@@ -4,5 +4,4 @@ guizero
 pillow
 IPython
 ipykernel
-git+https://github.com/league-curriculum/jlt_lib.git
 invoke

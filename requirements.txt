@@ -1,5 +1,7 @@
-# This file will get installed by the base image, 
-# but we are creating a .venv to slience warnings, 
-# so this one's empty.
-#
-# The real requirements are in .jtl/requirements.txt
+pygame
+pgzero
+guizero
+pillow
+IPython
+ipykernel
+invoke

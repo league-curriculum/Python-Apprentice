@@ -3,7 +3,7 @@
 {
 	"name": "Python 3",
 
-	"image": "ghcr.io/league-examples/python-devcontainer:v1.20250508.1",
+	"image": "ghcr.io/league-examples/python-devcontainer:v1.20250510.1",
 
 	//"build": {
 	//	"dockerfile": "Dockerfile",
@@ -54,7 +54,8 @@
 			"ms-toolsai.jupyter"
 	      ], 
 		  "settings": {
-
+			"python.defaultInterpreterPath": "/usr/local/bin/python",
+			"python.terminal.activateEnvironment": false
 		  }
 	    }
   	}
