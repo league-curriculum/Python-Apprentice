@@ -3,6 +3,7 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
+        "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "**/__pycache__": true,
         "**/.cache": true,
@@ -13,7 +14,22 @@
         "**/.nox": true,
         "**/.pytest_cache": true,
         "**/.ruff_cache": true,
-        "**/.tox": true
+        "**/.tox": true,
+        ".git": true,
+        ".github": true,
+        "**/.gitignore": true,
+        ".gitattributes": true,
+        ".pylintrc": true,
+        ".vscode": true,
+        ".yarn": true,
+        ".devcontainer": true,
+        "**/node_modules": true,
+        "**/.ipynb_checkpoints": true,
+        ".venv": true,
+        ".lib": true,
+        "**/.jtl": true,
+        "requirements.txt": true,
+        ".lessons": true
     }
 
 }
