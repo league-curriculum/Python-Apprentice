@@ -1,7 +1,0 @@
-pygame
-pgzero
-guizero
-pillow
-IPython
-ipykernel
-invoke
