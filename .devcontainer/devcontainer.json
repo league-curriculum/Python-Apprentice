@@ -43,7 +43,7 @@
 	"customizations": {
 	    "codespaces": {
 	      "openFiles": [
-			"README.md"
+			"lessons/10_Turtles/10_Welcome/10_Welcome.ipynb"
 		  ]
 	    },
 	    "vscode": {
@@ -56,7 +56,7 @@
 	      ], 
 		  "settings": {
 			"python.defaultInterpreterPath": "/usr/local/bin/python",
-			"python.terminal.activateEnvironment": false
+			"python.terminal.activateEnvironment": true
 		  }
 	    }
   	}
