@@ -51,7 +51,8 @@
 	        "ms-python.python",
 	        "ms-python.debugpy",
 			"ms-python.isort",
-			"ms-toolsai.jupyter"
+			"ms-toolsai.jupyter",
+			"jointheleague.jtl-syllabus"
 	      ], 
 		  "settings": {
 			"python.defaultInterpreterPath": "/usr/local/bin/python",
