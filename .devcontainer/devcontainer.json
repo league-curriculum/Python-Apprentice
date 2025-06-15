@@ -37,13 +37,13 @@
 
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash ./.jtl/setup.sh ${containerWorkspaceFolder}",
+	"postCreateCommand": "bash ./.devcontainer/setup.sh ${containerWorkspaceFolder}",
 	
 
 	"customizations": {
 	    "codespaces": {
 	      "openFiles": [
-			"README.md"
+			"lessons/10_Turtles/10_Welcome/10_Welcome.ipynb"
 		  ]
 	    },
 	    "vscode": {
@@ -51,11 +51,12 @@
 	        "ms-python.python",
 	        "ms-python.debugpy",
 			"ms-python.isort",
-			"ms-toolsai.jupyter"
+			"ms-toolsai.jupyter",
+			"jointheleague.jtl-syllabus"
 	      ], 
 		  "settings": {
 			"python.defaultInterpreterPath": "/usr/local/bin/python",
-			"python.terminal.activateEnvironment": false
+			"python.terminal.activateEnvironment": true
 		  }
 	    }
   	}
