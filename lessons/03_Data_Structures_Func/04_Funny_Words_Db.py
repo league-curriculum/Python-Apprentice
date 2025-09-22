@@ -19,15 +19,9 @@ The module has a limit of storing up to 5 definitions. If the limit is reached,
 an error message will be displayed and new definitions will not be added.
 
 """
-
-
-# Implement the functions below
-
-
-def add_definition(db, key, value):
-    """
+"""
     Add a new definition to the database.
-
+    
     Parameters:
     - db (dict): The database to add the definition to.
     - key (str): The key for the new definition.
@@ -38,6 +32,13 @@ def add_definition(db, key, value):
 
     If there are already 5 items in the database, an error message is displayed and the new item is not added.
     """
+
+# Implement the functions below
+
+
+def add_definition(db, key, value):
+    
+    
 
     # Check the limit
 
