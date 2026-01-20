@@ -1,4 +1,4 @@
-from guizero import App, Box, Text, TextBox, PushButton, ListBox, error
+from guizero import App, Box, Text, TextBox, PushButton, ListBox, error 
 
 """Funny Words Dictionary
 
@@ -41,10 +41,12 @@ def add_definition(db, key, value):
     
 
     # Check the limit
-
-    # Set the item in the database
-
-    pass
+    if len(db)>=5:
+        print("there can only be 5 definitions in the database")
+    else:
+        db[key]=value
+    
+   
 
 
 def delete_definition(db, key):
@@ -60,7 +62,7 @@ def delete_definition(db, key):
     """
 
     # Delete the item from db if it is present
-
+    db.remove(key)
     pass
 
 
