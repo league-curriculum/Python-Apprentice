@@ -65,11 +65,8 @@ modules:
     - name: Variables and Functions
       uid: HOBo0wvj
       exercise: 10_Turtles/50_Variables_and_Functions/10_Variables_and_Functions.ipynb
-    - name: Variables and Functions
-      uid: 0CwXIYSb
-      exercise: 10_Turtles/50_Variables_and_Functions/20_Variables_and_Functions.ipynb
     - name: Efficient Turtle
-      exercise: 10_Turtles/50_Variables_and_Functions/30_Efficient_Turtle.py
+      exercise: 10_Turtles/50_Variables_and_Functions/20_Efficient_Turtle.py
       display: true
   - name: More Turtle Programs
     uid: I4bCPbWz
