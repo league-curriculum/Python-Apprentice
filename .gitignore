@@ -1,0 +1,59 @@
+
+*.class
+Level1-Module3/_01_gui_app_bindings/_c_PigLatinTranslator/__pycache__/PigLatinConverter.cpython-38.pyc
+*.xml
+*.iml
+*.xml
+*.pyc
+
+.DS_Store
+.venv
+.idea
+.idea/workspace.xml
+
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Unit test / coverage reports
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE / Editor directories and files
+
+.idea/
+
+# Logs
+*.log
+
+# Miscellaneous
+*.bak
+*.swp
+
+saved/
+
+.jtl/*completion*
+.vscode

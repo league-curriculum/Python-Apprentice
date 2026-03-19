@@ -1,0 +1,60 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python 3",
+
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
+
+	"containerEnv": {
+		"SDL_VIDEO_WINDOW_POS": "0,0", // GUI Windows all the way in the upper left. 
+		"SDL_AUDIODRIVER": "dummy" // Disable audio
+    }, 
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
+			"password" : "code4life"
+		}
+	},
+
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts":  [6080, 5901],
+
+	"portsAttributes":  {
+		"6080":{
+			"label": "VNC Web Screen"
+		},
+		"5901":{
+			"label":"VNC App"
+		}
+	},
+
+
+	// Use 'initializeCommand' to run commands every time the container starts
+	"initializeCommand": "bash ./.devcontainer/setup.sh ${containerWorkspaceFolder}",
+	
+
+	"customizations": {
+	    "codespaces": {
+	      "openFiles": [
+			"lessons/10_Turtles/10_Welcome/10_Welcome.ipynb"
+		  ]
+	    },
+	    "vscode": {
+	      "extensions": [
+	        "ms-python.python",
+	        "ms-python.debugpy",
+			"ms-python.isort",
+			"ms-toolsai.jupyter",
+			"jointheleague.jtl-syllabus"
+	      ], 
+		  "settings": {
+			"python.defaultInterpreterPath": "/usr/local/bin/python",
+			"python.terminal.activateEnvironment": true
+		  }
+	    }
+  	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
