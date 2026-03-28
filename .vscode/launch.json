@@ -1,0 +1,14 @@
+{
+    // This launch conf must be first for the Lesson Browser
+    // run / stop buttons to work. 
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
