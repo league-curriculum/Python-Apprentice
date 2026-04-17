@@ -16,7 +16,7 @@ directions = [ # Create a list of directions and angles
 # Zip the colors and directions together, then unpack them. There is a good example of this
 # in 120_More_Iterables.ipynb in the discussion of zip()
 
-for ... in zip( ... , ...):
+for something in zip( ... , ...):
     t.color( ... )
     t.forward( ... )
     t.left( ... )
