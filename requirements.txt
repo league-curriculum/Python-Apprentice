@@ -6,3 +6,4 @@ IPython
 ipykernel
 ipyturtle3
 invoke
+jupyterquiz

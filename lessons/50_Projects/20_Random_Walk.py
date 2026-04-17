@@ -32,8 +32,8 @@ def random_walk(walker, steps):
     The turtle will move on a grid, taking a random step in one of the four directions
 
     For each of the steps, the turtle will move in a random direction (N, E, S, W) 
-    a fixed number of steps. Fur instance, the turtle should move 10 pixels each time, but
-    in a random, direction. 
+    a fixed number of steps. For instance, the turtle should move 10 pixels each time, but
+    in a random direction.
 
     Args:
     walker (turtle.Turtle): The turtle object
@@ -41,7 +41,7 @@ def random_walk(walker, steps):
 
     """
 
-    # You can make the turle move randomly in either of two ways: randomly choosing a direction
+    # You can make the turtle move randomly in either of two ways: randomly choosing a direction
     # or randomly choosing a angle to turn. You can use random.choice() to select a random element
     # from a list, like this: 
     # direction = random.choice(["N", "E", "S", "W"])
@@ -49,7 +49,7 @@ def random_walk(walker, steps):
     # angle = random.choice([0, 90, 180, 270])
     #
     # Or you can use random.randint() to generate a random integer between two values, like this:
-    # angle_index = random.randint(0, 4)
+    # angle_index = random.randint(0, 3)
     # directions = ["N", "E", "S", "W"] # or directions = [0, 90, 180, 270]
     # direction = directions[angle_index]
     #

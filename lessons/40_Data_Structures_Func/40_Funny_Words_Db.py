@@ -1,16 +1,12 @@
 """
+Funny Words Dictionary
+
 uid: VenVwSQz
 name: Funny Words Db
-"""
-
-from guizero import App, Box, Text, TextBox, PushButton, ListBox, error
-
-"""
-Funny Words Dictionary
 
 This program provides a graphical user interface (GUI) for managing a dictionary
 of funny words and their definitions. Users can add new definitions, delete
-existing definitions, and view the list of definitions in a listbox. 
+existing definitions, and view the list of definitions in a listbox.
 
 The module uses the guizero library to create the GUI components and handle user
 interactions.  It defines several functions for adding and deleting definitions,
@@ -19,11 +15,13 @@ global dictionary called 'db'. To use the application, run the script and a
 window will appear with input fields for entering a word and its definition.
 Clicking the 'Add' button will add the definition to the dictionary and update
 the listbox. Selecting a definition from the listbox and clicking the 'Delete
-Selected' button will remove the definition from the dictionary. 
+Selected' button will remove the definition from the dictionary.
 
 The module has a limit of storing up to 5 definitions. If the limit is reached,
 an error message will be displayed and new definitions will not be added.
 """
+
+from guizero import App, Box, Text, TextBox, PushButton, ListBox, error
 
 # Implement the functions below
 
@@ -78,7 +76,7 @@ def is_funny(definition):
     Returns:
         bool: True if the definition contains any of the funny words, False otherwise.
     """
-    
+
     # Return True if the definition contains any of the funny words, False otherwise
 
     return False
@@ -96,7 +94,7 @@ def update_listbox(db):
     l = [
         "Item 1: Fake Definition 1",
         "Item 2: Fake Definition 2",
-        "Item 3: fake Definition 3"
+        "Item 3: Fake Definition 3"
     ]
 
     # Add each definition to a string
@@ -112,7 +110,7 @@ def update_listbox(db):
 def _add_definition():
     word = word_entry.value.strip()
     definition = definition_entry.value.strip()
-    
+
 
     if word and definition:
         if is_funny(definition):

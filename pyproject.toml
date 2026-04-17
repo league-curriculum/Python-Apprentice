@@ -1,0 +1,15 @@
+[project]
+name = "python-apprentice-jay"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "guizero>=1.6.0",
+    "invoke>=3.0.3",
+    "ipykernel>=7.2.0",
+    "ipython>=9.12.0",
+    "ipyturtle3>=0.1.4",
+    "jupyterquiz>=2.9.6.4",
+    "pgzero>=1.2.1",
+    "pillow>=12.2.0",
+    "pygame>=2.6.1",
+]

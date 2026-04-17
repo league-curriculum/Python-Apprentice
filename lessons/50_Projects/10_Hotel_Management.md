@@ -1,13 +1,13 @@
 # Hotel Management
 
 The purpose of this program is to make sure you have an understanding of the
-topics you learned in Python Apprentice.  This is going to be your 1st program
-you write all by yourself, imagine someone hired you to create a hotel
-management program.
+topics you learned in Python Apprentice.  This is the first program you'll
+write on your own — imagine someone hired you to create a hotel management
+program.
 
 ## Getting Started:
 * Under projects create a new file and name it hotel_management.py
-* Create a docstring (it's the triple quotes “””  stuff goes inside “””)
+* Create a docstring (it's the triple quotes `"""  stuff goes inside """`)
 * Take some time to organize your thoughts on how the program will be laid out
   and what you will need (functions, imports, loops, etc.)
 * Write down your thoughts as a list or instructions to yourself inside the docstring
@@ -43,7 +43,7 @@ management program.
   * Ex.  Upgrade room, room service, spa package, etc.  
 
 
-Have Fun!!!
+Have fun.
 
 
 
