@@ -6,7 +6,7 @@ Write a program that:
 2) Make the turtle shape a moustache
 3) Move the moustache to the right spot on the emoji
 
-Hint: See the `10_More_Turtle_Programs` section labeled 'Change the Background Image' and
+Hint: See the `10_More_Turtle_Programs` section labeled 'Set a Background Picture'.
 """
 
 ... # Your code here

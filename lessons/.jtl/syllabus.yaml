@@ -77,8 +77,8 @@ modules:
     - name: More Turtle Programs
       uid: IloYptI2
       exercise: 10_Turtles/60_More_Turtle_Programs/10_More_Turtle_Programs.ipynb
-    - name: More Turtle programs
-      exercise: 10_Turtles/60_More_Turtle_Programs/20_More_Turtle_programs.py
+    - name: More Turtle Programs
+      exercise: 10_Turtles/60_More_Turtle_Programs/20_More_Turtle_Programs.py
     - name: More Turtle Programs
       exercise: 10_Turtles/60_More_Turtle_Programs/30_More_Turtle_Programs.py
     - name: More Turtle Programs
@@ -95,14 +95,14 @@ modules:
       exercise: 10_Turtles/70_Projects/30_Tash_Me_Click.py
     - name: Tash Me Twirl
       exercise: 10_Turtles/70_Projects/40_Tash_Me_Twirl.py
-  - name: Introducting Lists
+  - name: Introducing Lists
     uid: g4kLhJ2U
     lessons:
     - name: Lists
       uid: 0KEhJUGe
-      exercise: 10_Turtles/80_Introducting_Lists/10_Lists.ipynb
+      exercise: 10_Turtles/80_Introducing_Lists/10_Lists.ipynb
     - name: Color Lines
-      exercise: 10_Turtles/80_Introducting_Lists/20_Color_Lines.py
+      exercise: 10_Turtles/80_Introducing_Lists/20_Color_Lines.py
       display: true
   - name: Graphics Projects
     uid: 3shr4ruR

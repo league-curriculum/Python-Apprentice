@@ -13,18 +13,19 @@ name: Loop With Turtle
 """
 
 import turtle                           # Tell Python we want to work with the turtle
-turtle.setup(600,600,0,0)               # Set the size of the window
+turtle.setup(600, 600, 0, 0)            # Set the size of the window
 
 tina = turtle.Turtle()                  # Create a turtle named tina
 
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
+tina.speed(2)                           # Move at a moderate speed, not too fast.
 
+# Repeat forward + left three more times to finish the square.
 tina.forward(150)                       # Move tina forward by the forward distance
-tina.left(90)                           # Turn tina left by the left turn
+tina.left(90)                           # Turn tina left by 90 degrees
 
-tina.forward(150)                       # Continue the last two steps three more times
-tina.left(90)                           # to draw a square
+tina.forward(150)
+tina.left(90)
 
 tina.forward(150)
 tina.left(90)

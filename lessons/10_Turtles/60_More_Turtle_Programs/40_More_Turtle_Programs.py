@@ -1,5 +1,5 @@
 """
-Copy the code from the previous lesson, 10_More_Turtle_programs.ipynb, 
+Copy the code from the previous lesson, 10_More_Turtle_Programs.ipynb,
 from the section "Clicking the Turtle Directly"
 
 Then change the code so that the turtle has a different image ( look in the 'images'

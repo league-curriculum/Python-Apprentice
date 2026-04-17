@@ -5,5 +5,5 @@ uid: g4kLhJ2U
 
 ---
 
-# Introducting Lists
+# Introducing Lists
 
