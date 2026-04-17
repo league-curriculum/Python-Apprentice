@@ -3,13 +3,7 @@
 {
 	"name": "Python 3",
 
-	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
-
-
-	//"build": {
-	//	"dockerfile": "Dockerfile",
-	//	"context": ".."
-	//},
+	"image": "mcr.microsoft.com/devcontainers/python:3.12",
 
 	"containerEnv": {
 		"SDL_VIDEO_WINDOW_POS": "0,0", // GUI Windows all the way in the upper left. 
@@ -18,7 +12,7 @@
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/desktop-lite:1.2.7": {
+		"ghcr.io/devcontainers/features/desktop-lite:1": {
 			"password" : "code4life"
 		}
 	},
@@ -37,8 +31,8 @@
 	},
 
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash ./.devcontainer/setup.sh ${containerWorkspaceFolder}",
+	// Use 'initializeCommand' to run commands every time the container starts
+	"initializeCommand": "bash ./.devcontainer/setup.sh ${containerWorkspaceFolder}",
 	
 
 	"customizations": {
