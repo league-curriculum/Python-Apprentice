@@ -4,9 +4,7 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/Thumbs.db": true,
-        "**/*.crswap": true,
         "**/__pycache__": true,
-        "**/.cache": true,
         "**/.coverage": true,
         "**/.coverage.*": true,
         "**/.hypothesis": true,
@@ -14,7 +12,9 @@
         "**/.nox": true,
         "**/.pytest_cache": true,
         "**/.ruff_cache": true,
-        "**/.tox": true
+        "**/.tox": true,
+        "**/*.crswap": true,
+        "**/.cache": true
     }
 
 }
