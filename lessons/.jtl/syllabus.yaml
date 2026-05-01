@@ -149,7 +149,7 @@ modules:
   - name: Code Challenges
     uid: jJI6aomB
     exercise: 20_Types_and_Logic/80_Code_Challenges.ipynb
-- name: Loops
+- name: Iteration
   uid: TzgRqJlw
   lessons:
   - name: Iteration

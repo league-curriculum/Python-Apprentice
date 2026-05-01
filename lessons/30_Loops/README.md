@@ -1,8 +1,9 @@
 ---
 uid: TzgRqJlw
+title: iteration
 ---
 
-# Loops
+# Iteration
 
 This module focuses on repetition and working with collections of data.
 Students practice `while` and `for` loops, iteration with `range()`, and
