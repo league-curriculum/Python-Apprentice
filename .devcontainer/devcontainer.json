@@ -31,10 +31,7 @@
 	},
 
 
-	// Use 'initializeCommand' to run commands every time the container starts
-	"initializeCommand": "bash ./.devcontainer/setup.sh ${containerWorkspaceFolder}",
-
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk && bash ./.devcontainer/setup.sh ${containerWorkspaceFolder}",
 
 
 	"customizations": {
@@ -53,7 +50,24 @@
 	      ], 
 		  "settings": {
 			"python.defaultInterpreterPath": "/usr/local/bin/python",
-			"python.terminal.activateEnvironment": true
+			"python.terminal.activateEnvironment": true,
+			"editor.inlineSuggest.enabled": false,
+			"editor.quickSuggestions": {
+				"other": false,
+				"comments": false,
+				"strings": false
+			},
+			"editor.suggestOnTriggerCharacters": false,
+			"editor.wordBasedSuggestions": "off",
+			"editor.parameterHints.enabled": false,
+			"editor.snippetSuggestions": "none",
+			"github.copilot.enable": {
+				"*": false,
+				"plaintext": false,
+				"markdown": false,
+				"scminput": false
+			},
+			"github.copilot.inlineSuggest.enable": false
 		  }
 	    }
   	}

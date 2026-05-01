@@ -31,7 +31,8 @@ Or to display a badger:
 
 or you can convert the number to a string and iterate over the digits
 
-HINT: You can use % and // to get the first and last digit of a number,
+HINT: You can use % and // to get the first and last digit of a number.
+
 uid: cKjBvzzU
 name: Fizzbuzz Gui Grid
 """
@@ -42,6 +43,10 @@ app = App("Numbers Grid", layout="grid")
 
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
+
+for col in range(0,9):
+    for row in range(0,9):
+        Text(app, text='🦡', grid=[col, row], color='red')
 
 # In the loop, calculate or increment the number
 
