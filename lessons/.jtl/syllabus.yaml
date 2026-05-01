@@ -124,7 +124,7 @@ modules:
       uid: rkftzcAi
       exercise: 10_Turtles/90_Graphics_Projects/40_Turtle_Spiral.py
       display: true
-- name: PCEP Alignment
+- name: Types and Logic
   uid: ryHvW6vk
   lessons:
   - name: Operators and Types
@@ -149,7 +149,7 @@ modules:
   - name: Code Challenges
     uid: jJI6aomB
     exercise: 20_Types_and_Logic/80_Code_Challenges.ipynb
-- name: PCEP Alignment
+- name: Loops
   uid: TzgRqJlw
   lessons:
   - name: Iteration
@@ -201,7 +201,7 @@ modules:
   - name: Fizz Buzz Badgers
     uid: U1uGzJ1r
     exercise: 30_Loops/90_Fizz_Buzz_Badgers.py
-- name: PCEP Alignment
+- name: Data Structures and Functions
   uid: fDPxSid0
   lessons:
   - name: Functions

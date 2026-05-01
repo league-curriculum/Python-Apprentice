@@ -2,7 +2,13 @@
 uid: TzgRqJlw
 ---
 
-# PCEP Alignment
+# Loops
+
+This module focuses on repetition and working with collections of data.
+Students practice `while` and `for` loops, iteration with `range()`, and
+the basics of lists, tuples, indexing, and slicing.
+
+## PCEP Alignment
 
 * PCEP-30-01 3.2 – Perform Different Types of Loops
     * The `pass` Instruction

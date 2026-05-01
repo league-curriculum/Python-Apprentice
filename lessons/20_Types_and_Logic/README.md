@@ -2,7 +2,14 @@
 uid: ryHvW6vk
 ---
 
-# PCEP Alignment
+# Types and Logic
+
+This module introduces Python's core data types, expressions, input and
+output, string operations, and conditional logic. It gives students the
+foundations they need to read values, transform them, and make decisions
+in their programs.
+
+## PCEP Alignment
 
 * PCEP-30-01 1.3 – Use and Understand Different Types of Literals and Numeral Systems
     * Boolean, Integers, Floating-Point Numbers
