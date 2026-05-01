@@ -49,8 +49,10 @@
 			"jointheleague.jtl-syllabus"
 	      ], 
 		  "settings": {
-			"python.defaultInterpreterPath": "/usr/local/bin/python",
+			"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 			"python.terminal.activateEnvironment": true,
+			"isort.importStrategy": "fromEnvironment",
+			"isort.interpreter": ["${workspaceFolder}/.venv/bin/python"],
 			"editor.inlineSuggest.enabled": false,
 			"editor.quickSuggestions": {
 				"other": false,

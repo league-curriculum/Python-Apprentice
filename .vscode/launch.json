@@ -10,7 +10,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}",
-            "python": "/usr/local/bin/python"
+            "python": "${workspaceFolder}/.venv/bin/python"
         }
     ]
 }

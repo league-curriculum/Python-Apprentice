@@ -1,40 +1,40 @@
 #!/bin/bash
-set -x
+set -euxo pipefail
 
 TARGET_DIR=$1
 THIS_DIR=$(dirname "$(realpath "$0")")
+VENV_DIR="$TARGET_DIR/.venv"
+PREFERRED_PYTHON="/usr/local/bin/python"
+FALLBACK_PYTHON="/usr/bin/python3"
 
 echo "❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖"
 echo "TARGET_DIR: $TARGET_DIR"
 echo "THIS_DIR: $THIS_DIR"
 
-cd $TARGET_DIR
+if [ -x "$PREFERRED_PYTHON" ]; then
+	BASE_PYTHON="$PREFERRED_PYTHON"
+elif [ -x "$FALLBACK_PYTHON" ]; then
+	BASE_PYTHON="$FALLBACK_PYTHON"
+else
+	echo "No Python interpreter found for virtual environment setup." >&2
+	exit 1
+fi
 
-install_requirements() {
-	local python_cmd="$1"
-	local resolved_path
+cd "$TARGET_DIR"
 
-	if [ ! -x "$python_cmd" ]; then
-		return
+"$BASE_PYTHON" -m venv "$VENV_DIR"
+"$VENV_DIR/bin/python" -m pip install --upgrade pip
+"$VENV_DIR/bin/python" -m pip install -r requirements.txt
+
+append_if_missing() {
+	local line="$1"
+	local file="$2"
+
+	if ! grep -Fqx "$line" "$file"; then
+		echo "$line" >> "$file"
 	fi
-
-	resolved_path=$(realpath "$python_cmd")
-	for installed_path in "${INSTALLED_PYTHONS[@]}"; do
-		if [ "$installed_path" = "$resolved_path" ]; then
-			return
-		fi
-	done
-
-	"$python_cmd" -m pip install --user -r requirements.txt
-	INSTALLED_PYTHONS+=("$resolved_path")
 }
 
-INSTALLED_PYTHONS=()
-
-# VS Code in Codespaces may launch either of these interpreters for Run/Debug.
-install_requirements /usr/local/bin/python
-install_requirements /usr/bin/python3
-
-# Put a newline in the prompt to make it easier to read.
-echo "export PYTHONPATH=$(pwd)/.lib/:$PYTHONPATH" >> ~/.bashrc
+append_if_missing "export PYTHONPATH=$TARGET_DIR/.lib:\${PYTHONPATH:-}" "$HOME/.bashrc"
+append_if_missing "if [ -f \"$VENV_DIR/bin/activate\" ]; then . \"$VENV_DIR/bin/activate\"; fi" "$HOME/.bashrc"
 

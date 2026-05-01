@@ -44,9 +44,7 @@ app = App("Numbers Grid", layout="grid")
 # Create a 10x10 grid using nested loops
 # Or you can use a single loop and calculate the row and column
 
-for col in range(0,9):
-    for row in range(0,9):
-        Text(app, text='🦡', grid=[col, row], color='red')
+
 
 # In the loop, calculate or increment the number
 
