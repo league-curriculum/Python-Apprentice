@@ -20,7 +20,7 @@ def check_row(l):
         l: a 3 element iterable
 
     Returns:
-        The winner's token ( x or o ) if there is one, otherwise None
+        The winner's token ( X or O ) if there is one, otherwise None
         """
 
     return None
@@ -31,7 +31,7 @@ def check_win(board):
         board: a 3x3 2D array
 
     Returns:
-        The winner's token ( x or o ) if there is one, otherwise None
+        The winner's token ( X or O ) if there is one, otherwise None
     """
 
     return None
@@ -50,7 +50,7 @@ class TicTacToe:
 
         self.app = App('Tic Tac Toe Game', bg='burlywood')
         self.board_pane = Box(self.app, layout='grid')  # Holds UI elements for the board
-        self.message = Text(self.app, text="It is your turn, " + self.current_turn)
+        self.message = Text(self.app, text="It's your turn, " + self.current_turn)
 
         self.reset_button = PushButton(self.app, text='Reset', command=self.reset)
 

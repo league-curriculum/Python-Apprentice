@@ -1,7 +1,7 @@
 """
 Programmable turtle graphics
 
-Use what you've learned about lists, loop, cycle, slice and zip to draw a pattern
+Use what you've learned about lists, loops, cycle, slice and zip to draw a pattern
 """
 
 t = ... # Create a turtle like in previous programs, like 40_Crazy_Tina.py

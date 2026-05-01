@@ -8,7 +8,7 @@ color of the number based on the following rules:
 * If the number is evenly divisible by 5, print '🦡'
 * If the number is evenly divisible by 3, print '🍄'
 * If the number is evenly divisible by 15, print '🐍'
-* If it is divisible by neither, print the number.
+* If it is divisible by none of these, print the number.
 
 Because any multiple of 15 is also a multiple of 5 and 3, check for 15 first.
 
@@ -45,7 +45,7 @@ app = App("Numbers Grid", layout="grid")
 
 # In the loop, calculate or increment the number
 
-# Use % determining the display, using FizzBuzz rules
+# Use % to determine the display, using FizzBuzz rules
 
 # If you are displaying a number, calculate the sum of the digits and determine the color
 

@@ -1,7 +1,7 @@
 """
 Number Guess Game
 
-Pick a random number between 1 and 100. If the random number is divisible by 7,
+Pick a random number between 1 and 100. If the user's guess is divisible by 7,
 pick another number and continue picking new numbers until the random number is
 not divisible by 7. ( hint: use a loop! )
 

@@ -11,7 +11,7 @@ program.
 * Take some time to organize your thoughts on how the program will be laid out
   and what you will need (functions, imports, loops, etc.)
 * Write down your thoughts as a list or instructions to yourself inside the docstring
-* Add your imports (Tkinter or whatever you need)
+* Add your imports (tkinter or whatever you need)
 * Code away, make sure to keep it organized so you know where things are and
   what they do.
   * Separate different functionalities into their own functions.

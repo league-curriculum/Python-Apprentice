@@ -35,10 +35,10 @@ for i in range(50):
     # Set the turtle color to a random color
     my_turtle.pencolor(get_random_color())
 
-    # Move the turtle (5*i) pixels. 'i' is the loop variable
+    # Move the turtle (9*i) pixels. 'i' is the loop variable
     my_turtle.forward(9 * i)
 
-    # Turn the turtle (360/7) degrees to the right
+    # Turn the turtle (360/7 + i*5) degrees to the right
     my_turtle.right(360 / 7 + i*5)
 
     # Change the turtle width to 'i' (the loop variable)
