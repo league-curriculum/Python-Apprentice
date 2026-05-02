@@ -1,0 +1,12 @@
+title: Python Apprentice
+uid: 6ff03196-3519-498c-88a8-c4281040781f
+type: course
+tier: 2
+grades: 6-10
+category: programming
+topics: []
+prerequisites: []
+lessons: 0
+estimated_weeks: 24
+repo_url: https://github.com/league-curriculum/Python-Apprentice.git
+description: A multi-session introductory Python course that uses GitHub Codespaces and Visual Studio Code to teach core Python programming through turtle graphics, control flow, loops, functions, and beginner projects.

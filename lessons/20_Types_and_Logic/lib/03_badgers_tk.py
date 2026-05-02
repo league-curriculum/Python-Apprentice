@@ -26,7 +26,7 @@ from lib.badgers import FizzBuzzer
 
 def fizzbuzz(number):
     
-    # Put your fizzbuz code here. 
+    # Put your fizzbuzz code here.
     
     return 'mushroom' # Always show a snake
 

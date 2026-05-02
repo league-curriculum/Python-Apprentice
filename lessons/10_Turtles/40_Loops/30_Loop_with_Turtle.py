@@ -1,9 +1,16 @@
 """
-Turtles with a loop. 
+# 30_Loop_with_Turtle.py
 
-Study the previous program, 05a_Loop_with_Turtle.py, and then
-write a new program that uses a loop to draw a pentagon.
-( You can cut and past most of it! )
+In this program, use a loop to draw a regular pentagon (5-sided shape) with Tina the Turtle.
+
+- Review your previous program, 20_Loop_with_Turtle.py, which uses a loop to draw a shape with the turtle module.
+- Make sure your code is clear and well-commented.
+- Run your program to verify that Tina the Turtle draws a pentagon.
+
+(Hint: You can copy and modify your previous code!)
+
+uid: BpGnQq64
+name: Loop With Turtle
 """
 
 ... # Your code here

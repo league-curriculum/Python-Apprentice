@@ -1,0 +1,203 @@
+[
+  {
+    "question": "What does `range(5)` print?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "0, 1, 2, 3, 4", "correct": true, "feedback": "Correct! range(5) starts at 0 and stops before 5." },
+      { "answer": "1, 2, 3, 4, 5", "correct": false, "feedback": "Incorrect. range() starts at 0 by default." },
+      { "answer": "5, 4, 3, 2, 1", "correct": false, "feedback": "Incorrect. range() counts forward, not backward." },
+      { "answer": "1, 2, 3, 4", "correct": false, "feedback": "Incorrect. range() starts at 0, not 1." }
+    ]
+  },
+  {
+    "question": "Which can you loop through?",
+    "type": "many_choice",
+    "answers": [
+      { "answer": "Lists", "correct": true, "feedback": "Correct! Lists are iterable." },
+      { "answer": "Strings", "correct": true, "feedback": "Correct! You can loop through each character." },
+      { "answer": "Tuples", "correct": true, "feedback": "Correct! Tuples are iterable." },
+      { "answer": "Ranges", "correct": true, "feedback": "Correct! Ranges are iterable." },
+      { "answer": "Integers", "correct": false, "feedback": "Incorrect. You cannot loop through a single integer." }
+    ]
+  },
+  {
+    "question": "What is `list(range(2, 10, 2))`?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "[2, 4, 6, 8]", "correct": true, "feedback": "Correct! Start at 2, stop before 10, step by 2." },
+      { "answer": "[2, 4, 6, 8, 10]", "correct": false, "feedback": "Incorrect. range() stops before the stop value." },
+      { "answer": "[0, 2, 4, 6, 8]", "correct": false, "feedback": "Incorrect. It starts at 2, not 0." },
+      { "answer": "[2, 3, 4, 5, 6, 7, 8, 9]", "correct": false, "feedback": "Incorrect. The step is 2, not 1." }
+    ]
+  },
+  {
+    "question": "What is a tuple?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "An immutable list", "correct": true, "feedback": "Correct! Tuples cannot be changed after creation." },
+      { "answer": "A list you can change", "correct": false, "feedback": "Incorrect. Tuples are immutable." },
+      { "answer": "A dictionary", "correct": false, "feedback": "Incorrect. Tuples use () not {}." },
+      { "answer": "A function", "correct": false, "feedback": "Incorrect. Tuples are a data structure." }
+    ]
+  },
+  {
+    "question": "How do you create a one-item tuple?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "(1,)", "correct": true, "feedback": "Correct! The comma is required." },
+      { "answer": "(1)", "correct": false, "feedback": "Incorrect. This is just 1 in parentheses." },
+      { "answer": "[1]", "correct": false, "feedback": "Incorrect. This creates a list." },
+      { "answer": "{1}", "correct": false, "feedback": "Incorrect. This creates a set." }
+    ]
+  },
+  {
+    "question": "What does `a, b = (5, 10)` do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Sets a=5 and b=10", "correct": true, "feedback": "Correct! This is tuple unpacking." },
+      { "answer": "Creates an error", "correct": false, "feedback": "Incorrect. This is valid Python syntax." },
+      { "answer": "Sets a=10 and b=5", "correct": false, "feedback": "Incorrect. Order matters in unpacking." },
+      { "answer": "Sets both a and b to (5, 10)", "correct": false, "feedback": "Incorrect. The tuple is split between variables." }
+    ]
+  },
+  {
+    "question": "What is slicing?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Getting a portion of a list", "correct": true, "feedback": "Correct! Slicing extracts part of a sequence." },
+      { "answer": "Removing all items from a list", "correct": false, "feedback": "Incorrect. That's clear() or del." },
+      { "answer": "Sorting a list", "correct": false, "feedback": "Incorrect. That's sort() or sorted()." },
+      { "answer": "Adding to a list", "correct": false, "feedback": "Incorrect. That's append() or insert()." }
+    ]
+  },
+  {
+    "question": "Can tuples and lists both be sliced?",
+    "type": "many_choice",
+    "answers": [
+      { "answer": "Yes, both support slicing", "correct": true, "feedback": "Correct! Both can use [start:stop]." },
+      { "answer": "Yes, both support indexing", "correct": true, "feedback": "Correct! Both can use [index]." },
+      { "answer": "Yes, both support looping", "correct": true, "feedback": "Correct! Both are iterable." },
+      { "answer": "Yes, both can be modified", "correct": false, "feedback": "Incorrect. Tuples are immutable." }
+    ]
+  },
+  {
+    "question": "What does `[::-1]` do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Reverses a list", "correct": true, "feedback": "Correct! Negative step reverses order." },
+      { "answer": "Sorts a list", "correct": false, "feedback": "Incorrect. That's sort() or sorted()." },
+      { "answer": "Removes the first item", "correct": false, "feedback": "Incorrect. That's [1:]." },
+      { "answer": "Creates an error", "correct": false, "feedback": "Incorrect. This is valid slice syntax." }
+    ]
+  },
+  {
+    "question": "What does enumerate() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Adds index numbers to items", "correct": true, "feedback": "Correct! enumerate() returns (index, item) pairs." },
+      { "answer": "Counts items", "correct": false, "feedback": "Incorrect. That's len()." },
+      { "answer": "Sorts items", "correct": false, "feedback": "Incorrect. That's sorted()." },
+      { "answer": "Removes duplicates", "correct": false, "feedback": "Incorrect. That's set()." }
+    ]
+  },
+  {
+    "question": "What does zip() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Combines two lists into pairs", "correct": true, "feedback": "Correct! zip() pairs items from each list." },
+      { "answer": "Compresses a file", "correct": false, "feedback": "Incorrect. That's file compression, not Python's zip()." },
+      { "answer": "Joins two lists end-to-end", "correct": false, "feedback": "Incorrect. That's concatenation with +." },
+      { "answer": "Sorts two lists", "correct": false, "feedback": "Incorrect. That's sorted()." }
+    ]
+  },
+  {
+    "question": "What does split() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Breaks a string into a list", "correct": true, "feedback": "Correct! split() divides text into pieces." },
+      { "answer": "Joins a list into a string", "correct": false, "feedback": "Incorrect. That's join()." },
+      { "answer": "Removes spaces", "correct": false, "feedback": "Incorrect. That's strip()." },
+      { "answer": "Makes text lowercase", "correct": false, "feedback": "Incorrect. That's lower()." }
+    ]
+  },
+  {
+    "question": "What is true about slicing?",
+    "type": "many_choice",
+    "answers": [
+      { "answer": "Stop index is not included", "correct": true, "feedback": "Correct! [1:3] gives index 1 and 2 only." },
+      { "answer": "Can use negative numbers", "correct": true, "feedback": "Correct! [-1] gets the last item." },
+      { "answer": "Step can be negative", "correct": true, "feedback": "Correct! [::-1] reverses." },
+      { "answer": "Causes error if out of range", "correct": false, "feedback": "Incorrect. Slicing is forgiving." }
+    ]
+  },
+  {
+    "question": "What does append() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Adds item to end of list", "correct": true, "feedback": "Correct! append() adds to the end." },
+      { "answer": "Adds item to start of list", "correct": false, "feedback": "Incorrect. That's insert(0, item)." },
+      { "answer": "Removes last item", "correct": false, "feedback": "Incorrect. That's pop()." },
+      { "answer": "Sorts the list", "correct": false, "feedback": "Incorrect. That's sort()." }
+    ]
+  },
+  {
+    "question": "What's the difference: sorted() vs sort()?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "sorted() returns new list; sort() changes original", "correct": true, "feedback": "Correct! sorted() creates a copy." },
+      { "answer": "No difference", "correct": false, "feedback": "Incorrect. They handle the original list differently." },
+      { "answer": "sort() returns new list; sorted() changes original", "correct": false, "feedback": "Incorrect. It's the opposite." },
+      { "answer": "sorted() only works on numbers", "correct": false, "feedback": "Incorrect. Both work on any comparable items." }
+    ]
+  },
+  {
+    "question": "What does enumerate() start at?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "0", "correct": true, "feedback": "Correct! enumerate() starts counting at 0." },
+      { "answer": "1", "correct": false, "feedback": "Incorrect. Python uses 0-based indexing." },
+      { "answer": "It depends on the list", "correct": false, "feedback": "Incorrect. It always starts at 0 by default." },
+      { "answer": "-1", "correct": false, "feedback": "Incorrect. enumerate() counts forward from 0." }
+    ]
+  },
+  {
+    "question": "What does join() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Combines list items into a string", "correct": true, "feedback": "Correct! join() makes a string from a list." },
+      { "answer": "Splits a string into a list", "correct": false, "feedback": "Incorrect. That's split()." },
+      { "answer": "Adds two lists together", "correct": false, "feedback": "Incorrect. That's concatenation with +." },
+      { "answer": "Removes items from a list", "correct": false, "feedback": "Incorrect. That's remove() or pop()." }
+    ]
+  },
+  {
+    "question": "How do you count backward with range()?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Use negative step: range(10, 0, -1)", "correct": true, "feedback": "Correct! Negative step counts backward." },
+      { "answer": "range(0, 10)", "correct": false, "feedback": "Incorrect. This counts forward." },
+      { "answer": "range(10)", "correct": false, "feedback": "Incorrect. This counts forward from 0 to 9." },
+      { "answer": "range(-10, 0)", "correct": false, "feedback": "Incorrect. This counts from -10 to -1." }
+    ]
+  },
+  {
+    "question": "What does break do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Exits the loop immediately", "correct": true, "feedback": "Correct! break stops the loop." },
+      { "answer": "Skips to next iteration", "correct": false, "feedback": "Incorrect. That's continue." },
+      { "answer": "Pauses the loop", "correct": false, "feedback": "Incorrect. break ends the loop." },
+      { "answer": "Restarts the loop", "correct": false, "feedback": "Incorrect. break exits completely." }
+    ]
+  },
+  {
+    "question": "What does continue do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Skips to next loop iteration", "correct": true, "feedback": "Correct! continue skips remaining code in current iteration." },
+      { "answer": "Exits the loop", "correct": false, "feedback": "Incorrect. That's break." },
+      { "answer": "Pauses the loop", "correct": false, "feedback": "Incorrect. continue moves to next iteration." },
+      { "answer": "Restarts from beginning", "correct": false, "feedback": "Incorrect. continue goes to next iteration." }
+    ]
+  }
+]

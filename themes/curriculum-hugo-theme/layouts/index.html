@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Site.Title }}</h1>
+{{ .Content }}
+{{ range where .Site.Pages "Kind" "section" }}
+<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+{{ .Summary }}
+<ul>
+  {{ range .Pages }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What does forward() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Moves the turtle forward", "correct": true, "feedback": "Correct! forward() moves the turtle in the direction it's facing." },
+      { "answer": "Turns the turtle", "correct": false, "feedback": "Incorrect. forward() moves, not turns." },
+      { "answer": "Changes color", "correct": false, "feedback": "Incorrect. forward() is for movement." },
+      { "answer": "Draws a circle", "correct": false, "feedback": "Incorrect. Use circle() to draw circles." }
+    ]
+  },
+  {
+    "question": "Which command turns the turtle left?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "left()", "correct": true, "feedback": "Correct! left() turns the turtle to the left." },
+      { "answer": "turn()", "correct": false, "feedback": "Incorrect. Use left() or right()." },
+      { "answer": "rotate()", "correct": false, "feedback": "Incorrect. Use left() to turn." },
+      { "answer": "spin()", "correct": false, "feedback": "Incorrect. Use left() to turn left." }
+    ]
+  },
+  {
+    "question": "How many degrees is a square corner?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "90 degrees", "correct": true, "feedback": "Correct! Square corners are 90 degrees." },
+      { "answer": "45 degrees", "correct": false, "feedback": "Incorrect. Squares have 90-degree corners." },
+      { "answer": "180 degrees", "correct": false, "feedback": "Incorrect. That's a straight line." },
+      { "answer": "360 degrees", "correct": false, "feedback": "Incorrect. That's a full circle." }
+    ]
+  },
+  {
+    "question": "What does penup() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Stops drawing when the turtle moves", "correct": true, "feedback": "Correct! penup() lifts the pen so the turtle doesn't draw." },
+      { "answer": "Stops the turtle", "correct": false, "feedback": "Incorrect. The turtle can still move." },
+      { "answer": "Moves the turtle up", "correct": false, "feedback": "Incorrect. It controls drawing, not direction." },
+      { "answer": "Deletes the drawing", "correct": false, "feedback": "Incorrect. It just lifts the pen." }
+    ]
+  },
+  {
+    "question": "When would you use penup()?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "When you want to move without drawing", "correct": true, "feedback": "Correct! Use penup() to move the turtle without leaving a line." },
+      { "answer": "When you want to draw faster", "correct": false, "feedback": "Incorrect. Use speed() to change drawing speed." },
+      { "answer": "When you want to change colors", "correct": false, "feedback": "Incorrect. Use pencolor() to change colors." },
+      { "answer": "When you want to stop the program", "correct": false, "feedback": "Incorrect. penup() just stops drawing." }
+    ]
+  },
+  {
+    "question": "Which command changes the pen color?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "pencolor()", "correct": true, "feedback": "Correct! pencolor() sets the drawing color." },
+      { "answer": "color()", "correct": false, "feedback": "Close, but pencolor() is more specific for the pen." },
+      { "answer": "setcolor()", "correct": false, "feedback": "Incorrect. Use pencolor()." },
+      { "answer": "changecolor()", "correct": false, "feedback": "Incorrect. Use pencolor()." }
+    ]
+  },
+  {
+    "question": "What does goto(100, 100) do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Moves turtle to position (100, 100)", "correct": true, "feedback": "Correct! goto() moves to specific coordinates." },
+      { "answer": "Moves forward 100 steps", "correct": false, "feedback": "Incorrect. goto() moves to coordinates." },
+      { "answer": "Turns 100 degrees", "correct": false, "feedback": "Incorrect. goto() is for position, not turning." },
+      { "answer": "Draws 100 circles", "correct": false, "feedback": "Incorrect. goto() moves the turtle." }
+    ]
+  },
+  {
+    "question": "What is a loop?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Code that repeats multiple times", "correct": true, "feedback": "Correct! Loops repeat code automatically." },
+      { "answer": "Code that runs once", "correct": false, "feedback": "Incorrect. Loops repeat code." },
+      { "answer": "A type of variable", "correct": false, "feedback": "Incorrect. Loops are for repetition." },
+      { "answer": "A drawing command", "correct": false, "feedback": "Incorrect. Loops control how many times code runs." }
+    ]
+  },
+  {
+    "question": "How many times does range(5) repeat?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "5 times", "correct": true, "feedback": "Correct! range(5) creates 0, 1, 2, 3, 4 - that's 5 numbers." },
+      { "answer": "4 times", "correct": false, "feedback": "Incorrect. range(5) gives you 5 numbers." },
+      { "answer": "6 times", "correct": false, "feedback": "Incorrect. range(5) stops at 4." },
+      { "answer": "Forever", "correct": false, "feedback": "Incorrect. range(5) repeats exactly 5 times." }
+    ]
+  },
+  {
+    "question": "What is the correct syntax for a for loop?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "for i in range(5):\n    tina.forward(50)", "correct": true, "feedback": "Correct! Use 'for', 'in', 'range()', and a colon." },
+      { "code": "for i range(5)\n    tina.forward(50)", "correct": false, "feedback": "Incorrect. Missing 'in' and the colon." },
+      { "code": "loop 5 times:\n    tina.forward(50)", "correct": false, "feedback": "Incorrect. Python uses 'for i in range()'." },
+      { "code": "repeat(5):\n    tina.forward(50)", "correct": false, "feedback": "Incorrect. Use 'for i in range(5):'." }
+    ]
+  },
+  {
+    "question": "Why use loops instead of writing the same code many times?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Loops are shorter and easier to change", "correct": true, "feedback": "Correct! Loops save time and reduce mistakes." },
+      { "answer": "Loops make programs slower", "correct": false, "feedback": "Incorrect. Loops are efficient." },
+      { "answer": "Loops are harder to read", "correct": false, "feedback": "Incorrect. Loops make code clearer." },
+      { "answer": "You can't use loops in Python", "correct": false, "feedback": "Incorrect. Loops are essential in Python." }
+    ]
+  },
+  {
+    "question": "What is a variable?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "A container that stores a value", "correct": true, "feedback": "Correct! Variables hold information you can use later." },
+      { "answer": "A type of loop", "correct": false, "feedback": "Incorrect. Variables store data." },
+      { "answer": "A drawing command", "correct": false, "feedback": "Incorrect. Variables store values." },
+      { "answer": "A color", "correct": false, "feedback": "Incorrect. Variables can store many types of data." }
+    ]
+  },
+  {
+    "question": "Which creates a variable named 'size' with value 100?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "size = 100", "correct": true, "feedback": "Correct! Use = to assign a value to a variable." },
+      { "code": "size == 100", "correct": false, "feedback": "Incorrect. == checks equality. Use = to assign." },
+      { "code": "100 = size", "correct": false, "feedback": "Incorrect. Variable name goes on the left." },
+      { "code": "var size = 100", "correct": false, "feedback": "Incorrect. Python doesn't use 'var'." }
+    ]
+  },
+  {
+    "question": "What happens when you run this code: x = 5; x = x + 1?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "x becomes 6", "correct": true, "feedback": "Correct! x is updated to its old value plus 1." },
+      { "answer": "x stays 5", "correct": false, "feedback": "Incorrect. x gets a new value." },
+      { "answer": "x becomes 0", "correct": false, "feedback": "Incorrect. x increases by 1." },
+      { "answer": "Error", "correct": false, "feedback": "Incorrect. This is valid Python code." }
+    ]
+  },
+  {
+    "question": "What is a function?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Reusable code with a name", "correct": true, "feedback": "Correct! Functions are named blocks of code you can use repeatedly." },
+      { "answer": "A variable", "correct": false, "feedback": "Incorrect. Functions contain code, not just values." },
+      { "answer": "A loop", "correct": false, "feedback": "Incorrect. Functions and loops are different." },
+      { "answer": "A color", "correct": false, "feedback": "Incorrect. Functions are code blocks." }
+    ]
+  },
+  {
+    "question": "Which keyword starts a function definition?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "def", "correct": true, "feedback": "Correct! Use 'def' to define a function." },
+      { "answer": "function", "correct": false, "feedback": "Incorrect. Python uses 'def'." },
+      { "answer": "func", "correct": false, "feedback": "Incorrect. Use 'def'." },
+      { "answer": "define", "correct": false, "feedback": "Incorrect. The keyword is 'def'." }
+    ]
+  },
+  {
+    "question": "What is the correct way to define a function?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "def my_function():\n    tina.forward(50)", "correct": true, "feedback": "Correct! Use def, name, parentheses, colon, and indented code." },
+      { "code": "def my_function()\n    tina.forward(50)", "correct": false, "feedback": "Incorrect. Missing the colon after ()." },
+      { "code": "function my_function():\n    tina.forward(50)", "correct": false, "feedback": "Incorrect. Use 'def', not 'function'." },
+      { "code": "my_function():\n    tina.forward(50)", "correct": false, "feedback": "Incorrect. Missing 'def' keyword." }
+    ]
+  },
+  {
+    "question": "When would you use a function?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "When you want to reuse the same code", "correct": true, "feedback": "Correct! Functions let you use code multiple times." },
+      { "answer": "When you want to store a number", "correct": false, "feedback": "Incorrect. Use variables to store values." },
+      { "answer": "When you want to repeat code a specific number of times", "correct": false, "feedback": "Incorrect. That's what loops are for." },
+      { "answer": "When you want to change colors", "correct": false, "feedback": "Incorrect. Functions are for organizing reusable code." }
+    ]
+  },
+  {
+    "question": "What does return do in a function?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Sends a value back from the function", "correct": true, "feedback": "Correct! return gives back a result." },
+      { "answer": "Prints to the screen", "correct": false, "feedback": "Incorrect. That's what print() does." },
+      { "answer": "Stops the entire program", "correct": false, "feedback": "Incorrect. return only exits the function." },
+      { "answer": "Creates a variable", "correct": false, "feedback": "Incorrect. return sends values back." }
+    ]
+  },
+  {
+    "question": "What is a list?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "A collection of items in order", "correct": true, "feedback": "Correct! Lists hold multiple items like [1, 2, 3]." },
+      { "answer": "A single number", "correct": false, "feedback": "Incorrect. Lists hold multiple items." },
+      { "answer": "A function", "correct": false, "feedback": "Incorrect. Lists are data containers." },
+      { "answer": "A loop", "correct": false, "feedback": "Incorrect. Lists store data." }
+    ]
+  },
+  {
+    "question": "Which is the correct way to create a list?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "colors = ['red', 'blue', 'green']", "correct": true, "feedback": "Correct! Use square brackets with items separated by commas." },
+      { "code": "colors = ('red', 'blue', 'green')", "correct": false, "feedback": "Incorrect. Parentheses create tuples. Use []." },
+      { "code": "colors = {'red', 'blue', 'green'}", "correct": false, "feedback": "Incorrect. Curly braces create sets. Use []." },
+      { "code": "colors = 'red', 'blue', 'green'", "correct": false, "feedback": "Incorrect. Use square brackets []." }
+    ]
+  },
+  {
+    "question": "How do you get the first item from a list?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "list[0]", "correct": true, "feedback": "Correct! Python lists start at index 0." },
+      { "answer": "list[1]", "correct": false, "feedback": "Incorrect. That's the second item. Use [0]." },
+      { "answer": "list.first()", "correct": false, "feedback": "Incorrect. Use [0] to get the first item." },
+      { "answer": "first(list)", "correct": false, "feedback": "Incorrect. Use list[0]." }
+    ]
+  },
+  {
+    "question": "What does append() do to a list?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Adds an item to the end", "correct": true, "feedback": "Correct! append() adds items to the end of the list." },
+      { "answer": "Removes an item", "correct": false, "feedback": "Incorrect. Use remove() to delete items." },
+      { "answer": "Sorts the list", "correct": false, "feedback": "Incorrect. Use sort() to order items." },
+      { "answer": "Counts items", "correct": false, "feedback": "Incorrect. Use len() to count items." }
+    ]
+  },
+  {
+    "question": "How do you loop through each item in a list?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "for item in my_list:\n    print(item)", "correct": true, "feedback": "Correct! This loops through each item in the list." },
+      { "code": "for my_list in item:\n    print(item)", "correct": false, "feedback": "Incorrect. It should be 'for item in my_list'." },
+      { "code": "loop my_list:\n    print(item)", "correct": false, "feedback": "Incorrect. Use 'for item in my_list:'." },
+      { "code": "for item:\n    print(my_list)", "correct": false, "feedback": "Incorrect. Missing 'in my_list'." }
+    ]
+  },
+  {
+    "question": "What does circle(50) draw?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "A circle with radius 50", "correct": true, "feedback": "Correct! The number is the radius." },
+      { "answer": "50 circles", "correct": false, "feedback": "Incorrect. It draws one circle." },
+      { "answer": "A square", "correct": false, "feedback": "Incorrect. circle() draws circles." },
+      { "answer": "A line 50 units long", "correct": false, "feedback": "Incorrect. Use forward() for lines." }
+    ]
+  },
+  {
+    "question": "Where is position (0, 0) on the turtle screen?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Center of the screen", "correct": true, "feedback": "Correct! (0, 0) is in the middle." },
+      { "answer": "Top left corner", "correct": false, "feedback": "Incorrect. (0, 0) is the center." },
+      { "answer": "Bottom right corner", "correct": false, "feedback": "Incorrect. (0, 0) is the center." },
+      { "answer": "Top right corner", "correct": false, "feedback": "Incorrect. (0, 0) is in the middle." }
+    ]
+  },
+  {
+    "question": "What does speed(0) do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Makes turtle draw fastest", "correct": true, "feedback": "Correct! speed(0) is the fastest setting." },
+      { "answer": "Stops the turtle", "correct": false, "feedback": "Incorrect. 0 means fastest." },
+      { "answer": "Makes turtle slowest", "correct": false, "feedback": "Incorrect. 0 is fastest." },
+      { "answer": "Makes turtle invisible", "correct": false, "feedback": "Incorrect. Use hideturtle() for that." }
+    ]
+  },
+  {
+    "question": "What does # at the start of a line mean?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "It's a comment (Python ignores it)", "correct": true, "feedback": "Correct! Comments explain code to humans." },
+      { "answer": "It's a command", "correct": false, "feedback": "Incorrect. # creates comments." },
+      { "answer": "It causes an error", "correct": false, "feedback": "Incorrect. Comments are ignored." },
+      { "answer": "It makes code run faster", "correct": false, "feedback": "Incorrect. Comments don't affect speed." }
+    ]
+  },
+  {
+    "question": "Which code correctly draws a triangle?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "for i in range(3):\n    tina.forward(100)\n    tina.left(120)", "correct": true, "feedback": "Correct! Triangle has 3 sides and 120-degree turns." },
+      { "code": "for i in range(4):\n    tina.forward(100)\n    tina.left(120)", "correct": false, "feedback": "Incorrect. Triangle has 3 sides, not 4." },
+      { "code": "for i in range(3):\n    tina.forward(100)\n    tina.left(90)", "correct": false, "feedback": "Incorrect. Triangle needs 120-degree turns." },
+      { "code": "tina.triangle(100)", "correct": false, "feedback": "Incorrect. There's no triangle() method." }
+    ]
+  },
+  {
+    "question": "What does exitonclick() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Keeps window open until you click", "correct": true, "feedback": "Correct! The window waits for a click before closing." },
+      { "answer": "Closes window immediately", "correct": false, "feedback": "Incorrect. It waits for a click." },
+      { "answer": "Opens a new window", "correct": false, "feedback": "Incorrect. It controls the current window." },
+      { "answer": "Saves your drawing", "correct": false, "feedback": "Incorrect. It manages window closing." }
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What is an int in Python?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "A whole number", "correct": true, "feedback": "Correct! int stands for integer and represents whole numbers like 5, -10, or 0." },
+      { "answer": "A decimal number", "correct": false, "feedback": "Incorrect. Decimal numbers use the float type." },
+      { "answer": "A text value", "correct": false, "feedback": "Incorrect. Text values use the str type." },
+      { "answer": "A True/False value", "correct": false, "feedback": "Incorrect. True/False values use the bool type." }
+    ]
+  },
+  {
+    "question": "What is a boolean?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "True or False value", "correct": true, "feedback": "Correct! A boolean (bool) can only be True or False." },
+      { "answer": "A number", "correct": false, "feedback": "Incorrect. Numbers are int or float types." },
+      { "answer": "A word or sentence", "correct": false, "feedback": "Incorrect. Words and sentences are strings (str)." },
+      { "answer": "A list of items", "correct": false, "feedback": "Incorrect. Lists are a different data type." }
+    ]
+  },
+  {
+    "question": "What does the % operator do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Returns the remainder", "correct": true, "feedback": "Correct! 7 % 3 gives 1 because 7 divided by 3 leaves a remainder of 1." },
+      { "answer": "Divides numbers", "correct": false, "feedback": "Incorrect. Use / or // for division." },
+      { "answer": "Multiplies numbers", "correct": false, "feedback": "Incorrect. Use * for multiplication." },
+      { "answer": "Calculates percentage", "correct": false, "feedback": "Incorrect. Despite the symbol, % finds the remainder, not percentages." }
+    ]
+  },
+  {
+    "question": "What is // used for?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Division without decimals", "correct": true, "feedback": "Correct! 11 // 4 gives 2, dropping the decimal part." },
+      { "answer": "Regular division", "correct": false, "feedback": "Incorrect. Regular division uses /." },
+      { "answer": "Finding remainders", "correct": false, "feedback": "Incorrect. Use % to find remainders." },
+      { "answer": "Adding comments", "correct": false, "feedback": "Incorrect. Comments use #." }
+    ]
+  },
+  {
+    "question": "What does str() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Converts to text", "correct": true, "feedback": "Correct! str(42) converts the number 42 to the text '42'." },
+      { "answer": "Converts to a number", "correct": false, "feedback": "Incorrect. Use int() or float() for numbers." },
+      { "answer": "Checks the data type", "correct": false, "feedback": "Incorrect. Use type() to check data types." },
+      { "answer": "Makes text uppercase", "correct": false, "feedback": "Incorrect. Use upper() for uppercase." }
+    ]
+  },
+  {
+    "question": "Which is correct Python syntax?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "if x == 5:", "correct": true, "feedback": "Correct! Use == for comparison and : to start the if block." },
+      { "code": "if x = 5:", "correct": false, "feedback": "Incorrect. Use = for assignment, but == for comparison." },
+      { "code": "if x == 5", "correct": false, "feedback": "Incorrect. Missing the colon (:) at the end." },
+      { "code": "if (x == 5):", "correct": false, "feedback": "Incorrect. Parentheses aren't needed in Python if statements." }
+    ]
+  },
+  {
+    "question": "What does upper() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Makes text UPPERCASE", "correct": true, "feedback": "Correct! 'hello'.upper() returns 'HELLO'." },
+      { "answer": "Makes text lowercase", "correct": false, "feedback": "Incorrect. Use lower() for lowercase." },
+      { "answer": "Capitalizes first letter", "correct": false, "feedback": "Incorrect. Use title() or capitalize() for that." },
+      { "answer": "Removes spaces", "correct": false, "feedback": "Incorrect. Use strip() to remove spaces." }
+    ]
+  },
+  {
+    "question": "What is 10 % 3?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "1", "correct": true, "feedback": "Correct! 10 divided by 3 is 3 with remainder 1." },
+      { "answer": "3", "correct": false, "feedback": "Incorrect. That's 10 // 3 (quotient without remainder)." },
+      { "answer": "3.33", "correct": false, "feedback": "Incorrect. That's 10 / 3 (regular division)." },
+      { "answer": "0", "correct": false, "feedback": "Incorrect. There is a remainder when dividing 10 by 3." }
+    ]
+  },
+  {
+    "question": "Which creates a string?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "name = \"Alice\"", "correct": true, "feedback": "Correct! Quotes create strings in Python." },
+      { "code": "name = Alice", "correct": false, "feedback": "Incorrect. Without quotes, Python looks for a variable named Alice." },
+      { "code": "name = str", "correct": false, "feedback": "Incorrect. This assigns the str type itself, not a string value." },
+      { "code": "name = 'Alice", "correct": false, "feedback": "Incorrect. Missing closing quote." }
+    ]
+  },
+  {
+    "question": "What does type() tell you?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "The data type", "correct": true, "feedback": "Correct! type(5) returns int, type('hi') returns str." },
+      { "answer": "The value", "correct": false, "feedback": "Incorrect. type() shows the type, not the value itself." },
+      { "answer": "The length", "correct": false, "feedback": "Incorrect. Use len() for length." },
+      { "answer": "If it's valid code", "correct": false, "feedback": "Incorrect. type() doesn't validate code syntax." }
+    ]
+  },
+  {
+    "question": "What does == check?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "If values are equal", "correct": true, "feedback": "Correct! 5 == 5 returns True because they're equal." },
+      { "answer": "Assigns a value", "correct": false, "feedback": "Incorrect. Use = for assignment, not ==." },
+      { "answer": "If values are not equal", "correct": false, "feedback": "Incorrect. Use != for not equal." },
+      { "answer": "If one is greater", "correct": false, "feedback": "Incorrect. Use > for greater than." }
+    ]
+  },
+  {
+    "question": "What is 15 // 4?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "3", "correct": true, "feedback": "Correct! Floor division gives 3, ignoring the remainder." },
+      { "answer": "3.75", "correct": false, "feedback": "Incorrect. That's regular division (15 / 4)." },
+      { "answer": "4", "correct": false, "feedback": "Incorrect. 4 goes into 15 three times, not four." },
+      { "answer": "3.0", "correct": false, "feedback": "Incorrect. With integers, // returns an integer (3), not a float." }
+    ]
+  },
+  {
+    "question": "What does strip() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Removes spaces from ends", "correct": true, "feedback": "Correct! '  hi  '.strip() returns 'hi'." },
+      { "answer": "Removes all spaces", "correct": false, "feedback": "Incorrect. strip() only removes spaces from the start and end." },
+      { "answer": "Splits text into parts", "correct": false, "feedback": "Incorrect. Use split() to divide text." },
+      { "answer": "Makes text lowercase", "correct": false, "feedback": "Incorrect. Use lower() for lowercase." }
+    ]
+  },
+  {
+    "question": "What causes a TypeError?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "5 + \"10\"", "correct": true, "feedback": "Correct! Can't add a number and string directly. Convert first." },
+      { "code": "5 + 10", "correct": false, "feedback": "Incorrect. This is valid and equals 15." },
+      { "code": "\"5\" + \"10\"", "correct": false, "feedback": "Incorrect. This is valid string concatenation ('510')." },
+      { "code": "int(\"10\") + 5", "correct": false, "feedback": "Incorrect. This is valid after conversion (equals 15)." }
+    ]
+  },
+  {
+    "question": "What does 'and' require?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Both conditions True", "correct": true, "feedback": "Correct! True and True is True, but anything else is False." },
+      { "answer": "At least one condition True", "correct": false, "feedback": "Incorrect. That's what 'or' requires." },
+      { "answer": "Both conditions False", "correct": false, "feedback": "Incorrect. Then the result would be False." },
+      { "answer": "One True, one False", "correct": false, "feedback": "Incorrect. Then 'and' returns False." }
+    ]
+  },
+  {
+    "question": "What is float used for?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Decimal numbers", "correct": true, "feedback": "Correct! float represents numbers with decimals like 3.14 or 2.5." },
+      { "answer": "Whole numbers only", "correct": false, "feedback": "Incorrect. Use int for whole numbers." },
+      { "answer": "Text values", "correct": false, "feedback": "Incorrect. Use str for text." },
+      { "answer": "True/False values", "correct": false, "feedback": "Incorrect. Use bool for True/False." }
+    ]
+  },
+  {
+    "question": "Which starts an if statement?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "if x > 5:", "correct": true, "feedback": "Correct! Use if, a condition, then a colon." },
+      { "code": "if x > 5", "correct": false, "feedback": "Incorrect. Missing the colon (:)." },
+      { "code": "if: x > 5", "correct": false, "feedback": "Incorrect. The colon comes after the condition." },
+      { "code": "x > 5 if:", "correct": false, "feedback": "Incorrect. Wrong order; start with 'if'." }
+    ]
+  },
+  {
+    "question": "What does lower() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Makes text lowercase", "correct": true, "feedback": "Correct! 'HELLO'.lower() returns 'hello'." },
+      { "answer": "Makes text uppercase", "correct": false, "feedback": "Incorrect. Use upper() for uppercase." },
+      { "answer": "Removes spaces", "correct": false, "feedback": "Incorrect. Use strip() to remove spaces." },
+      { "answer": "Converts to number", "correct": false, "feedback": "Incorrect. Use int() or float() for numbers." }
+    ]
+  },
+  {
+    "question": "What is 8 % 4?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "0", "correct": true, "feedback": "Correct! 8 divided by 4 is 2 with no remainder." },
+      { "answer": "2", "correct": false, "feedback": "Incorrect. That's 8 // 4 (quotient). % gives remainder (0)." },
+      { "answer": "4", "correct": false, "feedback": "Incorrect. The remainder is 0, not 4." },
+      { "answer": "8", "correct": false, "feedback": "Incorrect. The remainder of 8 % 4 is 0." }
+    ]
+  },
+  {
+    "question": "What does != mean?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Not equal", "correct": true, "feedback": "Correct! 5 != 3 is True because they're not equal." },
+      { "answer": "Equal", "correct": false, "feedback": "Incorrect. Use == for equal." },
+      { "answer": "Greater than", "correct": false, "feedback": "Incorrect. Use > for greater than." },
+      { "answer": "Less than", "correct": false, "feedback": "Incorrect. Use < for less than." }
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+  {{ $main := resources.Get "css/main.css" }}
+  {{ if $main }}<style>{{ $main.Content | safeCSS }}</style>{{ end }}
+  {{ $ig := resources.Get "css/instructor-guide.css" }}
+  {{ if $ig }}<style>{{ $ig.Content | safeCSS }}</style>{{ end }}
+  {{ $custom := resources.Get "css/custom.css" }}
+  {{ if $custom }}<style>{{ $custom.Content | safeCSS }}</style>{{ end }}
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  {{/* Build flat page sequence: section → its pages, repeat (sorted by file path for 01- prefixes) */}}
+  {{ $allPages := slice }}
+  {{ $sections := sort (where .Site.Pages "Kind" "section") "File.Path" }}
+  {{ range $sections }}
+    {{ $allPages = $allPages | append . }}
+    {{ range sort .Pages "File.Path" }}
+      {{ $allPages = $allPages | append . }}
+    {{ end }}
+  {{ end }}
+  {{/* Find prev/next for current page */}}
+  {{ $prev := false }}
+  {{ $next := false }}
+  {{ $found := false }}
+  {{ range $i, $p := $allPages }}
+    {{ if eq $.RelPermalink $p.RelPermalink }}
+      {{ $found = true }}
+      {{ if gt $i 0 }}
+        {{ $prev = index $allPages (sub $i 1) }}
+      {{ end }}
+      {{ if lt $i (sub (len $allPages) 1) }}
+        {{ $next = index $allPages (add $i 1) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{/* Home page: next goes to first section/lesson */}}
+  {{ if and (not $found) (gt (len $allPages) 0) }}
+    {{ $next = index $allPages 0 }}
+  {{ end }}
+
+  <div class="page">
+    <aside class="sidebar-drawer">
+      <div class="sidebar-container">
+        <a href="{{ .Site.Home.RelPermalink }}" class="sidebar-brand">
+          <img src="https://images.jointheleague.org/logos/logo4.png" alt="League logo" class="sidebar-logo">
+          <span class="sidebar-brand-text">{{ .Site.Title }}</span>
+        </a>
+        <nav class="sidebar-tree">
+          <ul>
+            {{ range .Site.Menus.main }}
+            <li{{ if $.IsMenuCurrent "main" . }} class="current"{{ end }}>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+            {{ else }}
+            {{ range $sections }}
+            {{/* Module is "open" if the current page is this section or any page within it */}}
+            {{ $isOpen := eq $.RelPermalink .RelPermalink }}
+            {{ range .Pages }}
+              {{ if eq $.RelPermalink .RelPermalink }}{{ $isOpen = true }}{{ end }}
+            {{ end }}
+            <li class="sidebar-module{{ if $isOpen }} open{{ end }}{{ if eq $.RelPermalink .RelPermalink }} current{{ end }}">
+              <a href="{{ .RelPermalink }}" class="sidebar-module-link">{{ .Title }}</a>
+              {{ $pages := sort .Pages "File.Path" }}
+              {{ if $pages }}
+              <ul class="sidebar-lessons">
+                {{ range $pages }}
+                <li{{ if eq $.RelPermalink .RelPermalink }} class="current"{{ end }}>
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+              </ul>
+              {{ end }}
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </nav>
+        <div class="sidebar-nav-buttons">
+          {{ with $prev }}<a href="{{ .RelPermalink }}" class="sidebar-nav-prev">← Previous</a>{{ end }}
+          {{ with $next }}<a href="{{ .RelPermalink }}" class="sidebar-nav-next">Next →</a>{{ end }}
+        </div>
+        <div class="sidebar-curriculum-link">
+          <a href="https://curriculum.jointheleague.org">← All Curricula</a>
+        </div>
+        <div class="sidebar-footer">
+          <div class="sidebar-footer-brand">
+            <a href="https://www.jointheleague.org" class="sidebar-footer-league">
+              <img src="https://images.jointheleague.org/logos/flag.png" alt="" class="sidebar-footer-flag">
+              <span class="sidebar-footer-org">The League of<br>Amazing Programmers</span>
+            </a>
+          </div>
+          <div class="sidebar-footer-tagline">Igniting Young Minds Through Coding</div>
+          <div class="sidebar-footer-meta">
+            <span class="sidebar-footer-copyright">&copy; {{ now.Year }}</span>
+            {{ with .Site.Data.course.repo_url }}<span class="sidebar-footer-sep">&middot;</span><a href="{{ . }}" title="GitHub repository" class="sidebar-footer-icon">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            </a>{{ end }}
+            <span class="sidebar-footer-sep">&middot;</span>
+            <a href="#" class="sidebar-footer-about" id="about-toggle">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-modal" id="about-modal" style="display:none;">
+        <div class="about-modal-content">
+          <div class="about-modal-header">
+            <strong>About This Curriculum</strong>
+            <button type="button" id="about-close" aria-label="Close">✕</button>
+          </div>
+          <div class="about-modal-body">
+            <h3 class="about-title">{{ .Site.Title }}</h3>
+            {{ with .Site.Data.course.description }}<p class="about-description">{{ . }}</p>{{ end }}
+            {{ with .Site.Data.course.repo_url }}
+            <p class="about-repo"><a href="{{ . }}">{{ . }}</a></p>
+            {{ end }}
+            <table class="about-versions">
+              {{ with .Site.Params.curriculum_version }}<tr><td>Curriculum</td><td>{{ . }}</td></tr>{{ end }}
+              {{ with .Site.Data.course.tier }}<tr><td>Tier</td><td>{{ . }}</td></tr>{{ end }}
+              {{ with .Site.Params.curik_version }}<tr><td>Curik</td><td>{{ . }}</td></tr>{{ end }}
+              {{ with .Site.Data.theme }}<tr><td>Theme</td><td>{{ .version }}</td></tr>{{ end }}
+              <tr><td>Hugo</td><td>{{ hugo.Version }}</td></tr>
+            </table>
+            <p class="about-league"><a href="https://www.jointheleague.org">The League of Amazing Programmers</a><br>Igniting Young Minds Through Coding</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="main">
+      <div class="content">
+        {{ block "main" . }}
+          {{ .Content }}
+        {{ end }}
+      </div>
+      <footer class="bottom-of-page">
+        {{ if or $prev $next }}
+        <div class="prev-next">
+          <div>{{ with $prev }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}</div>
+          <div>{{ with $next }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}</div>
+        </div>
+        {{ end }}
+        <div class="footer-bottom">
+          <div class="footer-instructor" id="instructor-toggle" style="display:none;">
+            <button type="button" title="Instructor Guide" aria-label="Toggle instructor guide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="instructor-guide-panel" id="instructor-panel" style="display:none;">
+          <div class="instructor-guide-panel-header">
+            <strong>Instructor Guide</strong>
+            <button type="button" id="instructor-close" aria-label="Close">✕</button>
+          </div>
+          <div class="instructor-guide-panel-body" id="instructor-body"></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script>
+  (function() {
+    // Instructor guide panel
+    var sections = document.querySelectorAll('.instructor-guide-section');
+    if (sections.length) {
+      var toggle = document.getElementById('instructor-toggle');
+      var panel = document.getElementById('instructor-panel');
+      var body = document.getElementById('instructor-body');
+      var close = document.getElementById('instructor-close');
+      toggle.style.display = '';
+      sections.forEach(function(s) {
+        body.innerHTML += s.innerHTML;
+        s.remove();
+      });
+      toggle.querySelector('button').addEventListener('click', function() {
+        panel.style.display = panel.style.display === 'none' ? '' : 'none';
+      });
+      close.addEventListener('click', function() {
+        panel.style.display = 'none';
+      });
+    }
+
+    // About modal
+    var aboutToggle = document.getElementById('about-toggle');
+    var aboutModal = document.getElementById('about-modal');
+    var aboutClose = document.getElementById('about-close');
+    if (aboutToggle && aboutModal) {
+      aboutToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        aboutModal.style.display = '';
+      });
+      aboutClose.addEventListener('click', function() {
+        aboutModal.style.display = 'none';
+      });
+      aboutModal.addEventListener('click', function(e) {
+        if (e.target === aboutModal) aboutModal.style.display = 'none';
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

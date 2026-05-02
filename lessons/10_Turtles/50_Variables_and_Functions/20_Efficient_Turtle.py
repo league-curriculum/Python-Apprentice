@@ -1,22 +1,24 @@
-
 """
-More Efficient Turtles
+# 20_Efficient_Turtle.py
 
-Use what you've learned about functions and variables to make a program that
-can draw a square, pentagon, and hexagon with a single function
+In this program, use what you've learned about functions and variables to make a program that can draw a square, pentagon, and hexagon with a single function.
+
+- Create a function that draws a polygon based on the number of sides passed to it as an argument.
+- Use variables to calculate the angle needed to turn the turtle based on the number of sides.
+- Call the function multiple times with different arguments to draw a square, pentagon, and hexagon.
 """
 
-import turtle                           # Tell Python we want to work with the turtle
-turtle.setup(600,600,0,0)               # Set the size of the window
+import turtle                            # Tell Python we want to work with the turtle
+turtle.setup(600, 600, 0, 0)             # Set the size of the window
 
-tina = turtle.Turtle()                  # Create a turtle named tina
+tina = turtle.Turtle()                   # Create a turtle named tina
 
-tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
+tina.shape('turtle')                     # Set the shape of the turtle to a turtle
+tina.speed(2)                            # Move at a moderate speed, not too fast.
 
 def draw_polygon(sides):
 
-    angle = ... # Calculate angle from number of sides
+    angle = ...                          # Calculate angle from number of sides
     
     for i in range(...):                 # Loop through the number of sides
         ...                              # Move tina forward by the forward distance

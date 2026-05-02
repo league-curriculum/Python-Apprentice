@@ -1,6 +1,6 @@
 {
     // This launch conf must be first for the Lesson Browser
-    // run / stop buttons to work. 
+    // run / stop buttons to work.
     "version": "0.2.0",
     "configurations": [
         {
@@ -8,7 +8,9 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/bin/python"
         }
     ]
 }

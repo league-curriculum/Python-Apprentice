@@ -2,15 +2,10 @@ import tkinter as tk
 from tkinter import PhotoImage
 from pathlib import Path
 
-class FizzBuzzer():
+class FizzBuzzer:
 
     """Run a user defined function on a sequence of numbers and display the result in a Tkinter window"""
 
-    def __init__(self):
-        self.current_number = 0
-
-
-        
     # Function to update the display based on the current number
     def update_display(self):
 
@@ -36,8 +31,8 @@ class FizzBuzzer():
             self.display_label.config(text=result, image='', fg='red')
         else:
             self.display_label.config(text=result, image='', fg='black')
-        
-        self.current_number+= 1
+
+        self.current_number += 1
 
     def __init__(self, cb=None):
 

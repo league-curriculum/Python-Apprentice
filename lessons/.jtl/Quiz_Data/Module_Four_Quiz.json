@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What keyword defines a function?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "function", "correct": false, "feedback": "Python uses 'def' to define functions." },
+      { "answer": "def", "correct": true, "feedback": "Correct! 'def' creates a function." },
+      { "answer": "define", "correct": false, "feedback": "Python uses 'def' to define functions." },
+      { "answer": "func", "correct": false, "feedback": "Python uses 'def' to define functions." }
+    ]
+  },
+  {
+    "question": "What is a function for?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "To repeat code without rewriting it", "correct": true, "feedback": "Correct! Functions let you reuse code." },
+      { "answer": "To make programs slower", "correct": false, "feedback": "Functions help organize and reuse code efficiently." },
+      { "answer": "To delete variables", "correct": false, "feedback": "Functions are for organizing and reusing code." },
+      { "answer": "To create errors", "correct": false, "feedback": "Functions help organize and reuse code." }
+    ]
+  },
+  {
+    "question": "What is a dictionary?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "A book of definitions", "correct": false, "feedback": "In Python, a dictionary stores key-value pairs." },
+      { "answer": "A data structure with keys and values", "correct": true, "feedback": "Correct! Dictionaries store key-value pairs like {'name': 'Alice'}." },
+      { "answer": "A list of numbers", "correct": false, "feedback": "Dictionaries store key-value pairs, not just lists." },
+      { "answer": "A type of loop", "correct": false, "feedback": "Dictionaries are data structures, not loops." }
+    ]
+  },
+  {
+    "question": "What is a set?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "A collection with no duplicates", "correct": true, "feedback": "Correct! Sets automatically remove duplicates." },
+      { "answer": "An ordered list of items", "correct": false, "feedback": "Sets are unordered and have no duplicates." },
+      { "answer": "A type of string", "correct": false, "feedback": "Sets are collections, not strings." },
+      { "answer": "A dictionary", "correct": false, "feedback": "Sets and dictionaries are different data structures." }
+    ]
+  },
+  {
+    "question": "Which can be changed after creation?",
+    "type": "many_choice",
+    "answers": [
+      { "answer": "Lists", "correct": true, "feedback": "Correct! Lists are mutable." },
+      { "answer": "Sets", "correct": true, "feedback": "Correct! Sets are mutable." },
+      { "answer": "Tuples", "correct": false, "feedback": "Tuples cannot be changed." },
+      { "answer": "Dictionaries", "correct": true, "feedback": "Correct! Dictionaries are mutable." }
+    ]
+  },
+  {
+    "question": "How do sets differ from lists?",
+    "type": "many_choice",
+    "answers": [
+      { "answer": "No duplicate items in sets", "correct": true, "feedback": "Correct! Sets remove duplicates." },
+      { "answer": "Sets are unordered", "correct": true, "feedback": "Correct! Set order is not guaranteed." },
+      { "answer": "Sets use curly braces {}", "correct": true, "feedback": "Correct! Sets look like {1, 2, 3}." },
+      { "answer": "Sets can use numbers like s[0]", "correct": false, "feedback": "Sets cannot be indexed." }
+    ]
+  },
+  {
+    "question": "What prints: set(['a','a','b'])?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "{'a', 'a', 'b'}", "correct": false, "feedback": "Sets remove duplicates." },
+      { "answer": "{'a', 'b'}", "correct": true, "feedback": "Correct! Sets keep only unique items." },
+      { "answer": "['a', 'b']", "correct": false, "feedback": "Sets use {}, not []." },
+      { "answer": "{}", "correct": false, "feedback": "The set has 2 items: 'a' and 'b'." }
+    ]
+  },
+  {
+    "question": "How to create an empty dictionary?",
+    "type": "many_choice",
+    "answers": [
+      { "code": "d = dict()", "correct": true, "feedback": "Correct! This creates an empty dictionary." },
+      { "code": "d = {}", "correct": true, "feedback": "Correct! {} makes an empty dictionary." },
+      { "code": "d = []", "correct": false, "feedback": "[] creates a list." },
+      { "code": "d = set()", "correct": false, "feedback": "This creates a set." }
+    ]
+  },
+  {
+    "question": "What does d.get('key') return if 'key' doesn't exist?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "An error", "correct": false, "feedback": "get() returns None, not an error." },
+      { "answer": "None", "correct": true, "feedback": "Correct! get() returns None for missing keys." },
+      { "answer": "0", "correct": false, "feedback": "get() returns None for missing keys." },
+      { "answer": "''", "correct": false, "feedback": "get() returns None for missing keys." }
+    ]
+  },
+  {
+    "question": "Which method returns key-value pairs?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "d.keys()", "correct": false, "feedback": "keys() returns only keys." },
+      { "answer": "d.values()", "correct": false, "feedback": "values() returns only values." },
+      { "answer": "d.items()", "correct": true, "feedback": "Correct! items() returns (key, value) tuples." },
+      { "answer": "d.pairs()", "correct": false, "feedback": "No pairs() method exists. Use items()." }
+    ]
+  },
+  {
+    "question": "What prints: d={'a':1, 'b':2}; print(d['b'])?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "1", "correct": false, "feedback": "d['b'] is 2." },
+      { "answer": "2", "correct": true, "feedback": "Correct! d['b'] equals 2." },
+      { "answer": "b", "correct": false, "feedback": "It prints the value, not the key." },
+      { "answer": "{'b': 2}", "correct": false, "feedback": "It prints just the value: 2." }
+    ]
+  },
+  {
+    "question": "How to remove a dictionary item?",
+    "type": "many_choice",
+    "answers": [
+      { "code": "d.remove('key')", "correct": false, "feedback": "No remove() method exists." },
+      { "code": "del d['key']", "correct": true, "feedback": "Correct! del removes dictionary items." },
+      { "code": "d.delete('key')", "correct": false, "feedback": "No delete() method exists." },
+      { "code": "d.pop('key')", "correct": true, "feedback": "Correct! pop() removes and returns the value." }
+    ]
+  },
+  {
+    "question": "What does 'x' in d check?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "If 'x' is a value", "correct": false, "feedback": "'in' checks keys, not values." },
+      { "answer": "If 'x' is a key", "correct": true, "feedback": "Correct! 'in' checks if 'x' is a key." },
+      { "answer": "If 'x' is a key or value", "correct": false, "feedback": "'in' only checks keys." },
+      { "answer": "If d is empty", "correct": false, "feedback": "'in' checks for a specific key." }
+    ]
+  },
+  {
+    "question": "What is list comprehension syntax?",
+    "type": "multiple_choice",
+    "answers": [
+      { "code": "[x for x in list]", "correct": true, "feedback": "Correct! This is list comprehension." },
+      { "code": "for x in list: [x]", "correct": false, "feedback": "List comprehension uses [x for x in list]." },
+      { "code": "list(x)", "correct": false, "feedback": "This converts to a list, not comprehension." },
+      { "code": "{x for x in list}", "correct": false, "feedback": "This creates a set, not a list." }
+    ]
+  },
+  {
+    "question": "What prints: [x*2 for x in [1,2,3]]?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "[1, 2, 3]", "correct": false, "feedback": "Each number is multiplied by 2." },
+      { "answer": "[2, 4, 6]", "correct": true, "feedback": "Correct! Each number is doubled." },
+      { "answer": "[1, 4, 9]", "correct": false, "feedback": "This would be x*x (squaring)." },
+      { "answer": "[3, 6, 9]", "correct": false, "feedback": "Each value is multiplied by 2, not 3." }
+    ]
+  },
+  {
+    "question": "What does * do in function(*args)?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Multiplies all arguments", "correct": false, "feedback": "* unpacks arguments, doesn't multiply." },
+      { "answer": "Unpacks items as separate arguments", "correct": true, "feedback": "Correct! * unpacks a list/tuple into arguments." },
+      { "answer": "Creates a copy", "correct": false, "feedback": "* unpacks items, doesn't copy." },
+      { "answer": "Reverses the order", "correct": false, "feedback": "* unpacks items, doesn't reverse." }
+    ]
+  },
+  {
+    "question": "What does zip() do?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "Compresses files", "correct": false, "feedback": "zip() combines lists, not files." },
+      { "answer": "Pairs items from multiple lists", "correct": true, "feedback": "Correct! zip() pairs corresponding elements." },
+      { "answer": "Sorts lists", "correct": false, "feedback": "zip() combines lists, doesn't sort." },
+      { "answer": "Reverses lists", "correct": false, "feedback": "zip() combines lists, doesn't reverse." }
+    ]
+  },
+  {
+    "question": "What prints: list(zip([1,2], [3,4]))?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "[(1, 2), (3, 4)]", "correct": false, "feedback": "zip() pairs 1st items, then 2nd items." },
+      { "answer": "[(1, 3), (2, 4)]", "correct": true, "feedback": "Correct! zip() pairs corresponding items." },
+      { "answer": "[1, 2, 3, 4]", "correct": false, "feedback": "zip() creates tuples, not a flat list." },
+      { "answer": "[1, 3, 2, 4]", "correct": false, "feedback": "zip() creates tuples of pairs." }
+    ]
+  },
+  {
+    "question": "When do you use a dictionary?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "To store key-value pairs", "correct": true, "feedback": "Correct! Dictionaries map keys to values." },
+      { "answer": "To store only numbers", "correct": false, "feedback": "Dictionaries can store any data types." },
+      { "answer": "To remove duplicates", "correct": false, "feedback": "Sets remove duplicates, not dictionaries." },
+      { "answer": "To sort items", "correct": false, "feedback": "Dictionaries are for key-value storage." }
+    ]
+  },
+  {
+    "question": "What error: int('hello')?",
+    "type": "multiple_choice",
+    "answers": [
+      { "answer": "TypeError", "correct": false, "feedback": "This raises ValueError for invalid conversion." },
+      { "answer": "ValueError", "correct": true, "feedback": "Correct! ValueError for invalid string to int." },
+      { "answer": "IndexError", "correct": false, "feedback": "IndexError is for invalid indices." },
+      { "answer": "KeyError", "correct": false, "feedback": "KeyError is for missing dictionary keys." }
+    ]
+  }
+]

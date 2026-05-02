@@ -1,4 +1,4 @@
-""" 
+"""
 Tash Me
 
 Write a program that:
@@ -6,8 +6,7 @@ Write a program that:
 2) Make the turtle shape a moustache
 3) Move the moustache to the right spot on the emoji
 
-Hint: See 08a_More Turtle Programs, section 'Change the Background Image' and
-'Change the Turtle Shape'
+Hint: See the `10_More_Turtle_Programs` section labeled 'Set a Background Picture'.
 """
 
 ... # Your code here

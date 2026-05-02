@@ -1,7 +1,7 @@
-""" 
+"""
 Number Guess Game
 
-Pick a random number between 1 and 100. If the random number is divisible by 7,
+Pick a random number between 1 and 100. If the user's guess is divisible by 7,
 pick another number and continue picking new numbers until the random number is
 not divisible by 7. ( hint: use a loop! )
 
@@ -26,8 +26,12 @@ Get a random number:
 Use the ask_integer function to get the user's guess, like this:
     guess = ask_integer("Guess a number between 1 and 100: ")
 
-Note: The prompts and output for your program will be in the teminal
-at the bottom of the editor screen; this program does not use the GUI.
+The prompts will appear in the terminal at the bottom of the editor window;
+this program does not use a GUI.
+
+Note: The prompts and output for your program will be in the terminal.
+uid: rZO9PHOt
+name: Number Guess
 """
 
 import random
