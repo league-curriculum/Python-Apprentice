@@ -1,5 +1,5 @@
-baseURL = "/"
-title = "TBD"
+baseURL = "https://python-apprentice.jointheleague.org/"
+title = "Python Apprentice"
 theme = "curriculum-hugo-theme"
 enableEmoji = true
 
