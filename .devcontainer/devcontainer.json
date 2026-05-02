@@ -44,7 +44,6 @@
 	      "extensions": [
 	        "ms-python.python",
 	        "ms-python.debugpy",
-			"ms-python.isort",
 			"ms-toolsai.jupyter",
 			"jointheleague.jtl-syllabus"
 	      ], 
