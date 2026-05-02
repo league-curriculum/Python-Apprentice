@@ -1,0 +1,8 @@
+{{- /* Callout: info, warning, or tip box. Type param defaults to "info". */ -}}
+{{- $type := .Get "type" | default "info" -}}
+<div class="callout callout-{{ $type }}">
+  <div class="callout-title">{{ $type | title }}</div>
+  <div class="callout-content">
+    {{ .Inner | markdownify }}
+  </div>
+</div>

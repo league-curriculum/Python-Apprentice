@@ -1,3 +1,19 @@
+# -- CURIK:START --
+# Managed by curik — do not edit this section manually.
+# Run `curik init` to update.
+
+# Hugo build output
+public/
+resources/_gen/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Hugo lock file
+.hugo_build.lock
+# -- CURIK:END --
+
 *.class
 Level1-Module3/_01_gui_app_bindings/_c_PigLatinTranslator/__pycache__/PigLatinConverter.cpython-38.pyc
 *.xml

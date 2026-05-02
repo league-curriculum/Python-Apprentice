@@ -1,0 +1,31 @@
+baseURL = "/"
+title = "TBD"
+theme = "curriculum-hugo-theme"
+enableEmoji = true
+
+# Mount course.yml as Hugo data so templates can read it
+# directly via .Site.Data.course — no need to duplicate fields.
+[[module.mounts]]
+  source = "content"
+  target = "content"
+[[module.mounts]]
+  source = "course.yml"
+  target = "data/course.yml"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[params]
+  copyright = "The League of Amazing Programmers"
+  license = "CC BY-NC 4.0"
+  curriculum_version = "0.20260501.1"
+  curik_version = "0.20260416.1"
+  instructorGuide = true

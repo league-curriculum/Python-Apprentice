@@ -1,0 +1,13 @@
+{{ define "main" }}
+<nav class="breadcrumb">
+  <a href="{{ .Site.BaseURL }}">Home</a>
+  {{ with .Parent }}
+  / <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ end }}
+  / <span>{{ .Title }}</span>
+</nav>
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</article>
+{{ end }}

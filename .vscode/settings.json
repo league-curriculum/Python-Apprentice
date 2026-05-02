@@ -32,7 +32,6 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/Thumbs.db": true,
-    "**/*.crswap": true,
     "**/__pycache__": true,
     "**/.coverage": true,
     "**/.coverage.*": true,
@@ -42,6 +41,7 @@
     "**/.pytest_cache": true,
     "**/.ruff_cache": true,
     "**/.tox": true,
+    "**/*.crswap": true,
     "**/.cache": true
   }
 }
