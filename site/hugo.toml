@@ -1,4 +1,4 @@
-baseURL = "https://python-apprentice.jointheleague.org/"
+baseURL = "https://curriculum.jointheleague.org/Python-Apprentice/"
 title = "Python Apprentice"
 theme = "curriculum-hugo-theme"
 enableEmoji = true
@@ -9,7 +9,7 @@ enableEmoji = true
   source = "content"
   target = "content"
 [[module.mounts]]
-  source = "course.yml"
+  source = "../course.yml"
   target = "data/course.yml"
 
 [markup]

@@ -29,12 +29,12 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --source site --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./site/public
 
   deploy:
     environment:
