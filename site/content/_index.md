@@ -41,7 +41,7 @@ title: Python Apprentice
 		</div>
 	</div>
 	<figure class="course-hero-image">
-		<img src="https://python-apprentice.jointheleague.org/images/turtle-spirals.gif" alt="A colorful spiral drawn with Python turtle graphics">
+		<img src="https://curriculum.jointheleague.org/Python-Apprentice/images/turtle-spirals.gif" alt="A colorful spiral drawn with Python turtle graphics">
 		<figcaption>Early lessons use turtle graphics so students can see their code draw shapes and patterns.</figcaption>
 	</figure>
 </div>
