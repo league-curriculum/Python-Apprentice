@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  League virtual display client. Based on noVNC's vnc_lite.html, using the
+  same core/rfb.js, so it works with the Debian novnc package (1.3.x) and
+  newer noVNC releases.
+
+  Why not vnc.html?reconnect=true: the stock client only reconnects after a
+  *clean* close. A dropped network connection (close code 1006), which is
+  the failure students actually hit, leaves a "Failed to connect" screen.
+  This page reconnects after any disconnect, forever, with a short backoff.
+
+  Query parameters (all optional):
+    path      websocket path relative to the host root (default: websockify)
+    host,port websocket host/port (default: this page's)
+    password  VNC password, if the server needs one
+    scale     "false" to show the desktop at 1:1 instead of fitting the window
+    view_only "true" to ignore mouse and keyboard
+-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual Display</title>
+<style>
+    html, body {
+        margin: 0;
+        height: 100%;
+        background: #282828;
+        overflow: hidden;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    #screen {
+        position: absolute;
+        inset: 0;
+    }
+    #status {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4px 12px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.75);
+        color: #eee;
+        font-size: 13px;
+        pointer-events: none;
+        z-index: 10;
+    }
+    #status.hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div id="status">Connecting…</div>
+<div id="screen"></div>
+
+<script type="module" crossorigin="anonymous">
+    import RFB from './core/rfb.js';
+
+    const RETRY_MIN_MS = 1000;
+    const RETRY_MAX_MS = 5000;
+
+    const params = new URLSearchParams(window.location.search);
+    const host = params.get('host') || window.location.hostname;
+    const port = params.get('port') || window.location.port;
+    const path = (params.get('path') || 'websockify').replace(/^\/+/, '');
+    const password = params.get('password');
+    const scale = params.get('scale') !== 'false';
+    const viewOnly = params.get('view_only') === 'true';
+
+    const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
+    const url = `${proto}://${host}${port ? ':' + port : ''}/${path}`;
+
+    const statusEl = document.getElementById('status');
+    const screenEl = document.getElementById('screen');
+
+    let rfb = null;
+    let retryDelay = RETRY_MIN_MS;
+    let retryTimer = null;
+
+    function showStatus(text) {
+        statusEl.textContent = text;
+        statusEl.classList.toggle('hidden', text === '');
+    }
+
+    function connect() {
+        clearTimeout(retryTimer);
+        retryTimer = null;
+        if (rfb) {
+            return;
+        }
+
+        const options = password ? { credentials: { password } } : {};
+        rfb = new RFB(screenEl, url, options);
+        rfb.scaleViewport = scale;
+        rfb.viewOnly = viewOnly;
+
+        rfb.addEventListener('connect', () => {
+            retryDelay = RETRY_MIN_MS;
+            showStatus('');
+        });
+
+        rfb.addEventListener('disconnect', () => {
+            rfb = null;
+            scheduleReconnect();
+        });
+
+        rfb.addEventListener('credentialsrequired', () => {
+            const entered = window.prompt('Password for the virtual display:');
+            rfb.sendCredentials({ password: entered || '' });
+        });
+    }
+
+    function scheduleReconnect() {
+        if (retryTimer) {
+            return;
+        }
+        showStatus('Reconnecting…');
+        retryTimer = setTimeout(connect, retryDelay);
+        retryDelay = Math.min(retryDelay * 2, RETRY_MAX_MS);
+    }
+
+    // Reconnect right away, rather than waiting out the backoff, when the
+    // student comes back to the tab or the network comes back.
+    function reconnectNow() {
+        if (!rfb) {
+            retryDelay = RETRY_MIN_MS;
+            connect();
+        }
+    }
+    window.addEventListener('online', reconnectNow);
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+            reconnectNow();
+        }
+    });
+
+    connect();
+</script>
+</body>
+</html>
