@@ -14,8 +14,8 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		// Virtual desktop for turtle/pygame windows, served by noVNC on 6080.
-		// Local for now; will move to its own features repo.
-		"./league-desktop": {}
+		// https://github.com/league-infrastructure/devcontainer-features
+		"ghcr.io/league-infrastructure/devcontainer-features/league-desktop:1": {}
 	},
 
 
