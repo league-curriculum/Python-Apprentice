@@ -3,7 +3,8 @@
 {
 	"name": "Python 3",
 
-	"image": "mcr.microsoft.com/devcontainers/python:3.12",
+	// Pinned to bookworm: the unpinned tag moves to new Debian releases on its own.
+	"image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
 
 	"containerEnv": {
 		"SDL_VIDEO_WINDOW_POS": "0,0", // GUI Windows all the way in the upper left. 
@@ -12,21 +13,26 @@
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/desktop-lite:1": {
-			"password" : "code4life"
-		}
+		// Virtual desktop for turtle/pygame windows, served by noVNC on 6080.
+		// https://github.com/league-infrastructure/devcontainer-features
+		"ghcr.io/league-infrastructure/devcontainer-features/league-desktop:1": {}
+
+		// Old desktop, kept for rollback. To switch back, comment out
+		// league-desktop above and uncomment this. Don't enable both: they
+		// both use port 6080 and DISPLAY :1.
+		// "ghcr.io/devcontainers/features/desktop-lite:1": {
+		// 	"password" : "code4life"
+		// }
 	},
 
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts":  [6080, 5901],
+	"forwardPorts":  [6080],
 
 	"portsAttributes":  {
 		"6080":{
-			"label": "VNC Web Screen"
-		},
-		"5901":{
-			"label":"VNC App"
+			"label": "Virtual Display",
+			"onAutoForward": "silent"
 		}
 	},
 
